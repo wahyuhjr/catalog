@@ -1,7 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\Auth\LoginUserController;
+use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Auth::routes();
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,6 +27,11 @@ Route::get('/', function () {
 Route::get('index', function () {
     return view('index');
 });
-Route::get('dashboard', function () {
-    return view('dashboard');
-});
+
+
+
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__ . '/auth.php';
