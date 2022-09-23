@@ -1,37 +1,52 @@
  @extends('layouts.app')
- @include('layouts.navbar')
  @section('content')
 
+
  <!-- wrape-image -->
- <div class="wrape-image lg:w-full">
-     <img src="{{  asset ('assets/images/ex-img.jpg') }}">
- </div>
+ <section id="home" class="pt-36 h-screen bg-dof">
+     <div class="container">
+         <div class="flex flex-wrap">
+             <div class="w-full selft-center px-4 lg:w-1/2">
+                 <h5 class="text-cream text-bold text-xl">
+                     Sambal Dengan Ikan Teri Renyah
+                 </h5>
+                 <h1 class="text-cream font-semibold text-7xl">
+                     Crispy Fish Chili
+                 </h1>
+                 <p class="text-cream w-full mt-3">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, consequuntur vero nobis temporibus
+                     voluptatem nesciunt quas suscipit facere. Id molestiae eius assumenda impedit placeat aperiam esse
+                     voluptates? Amet, suscipit in.
+                 </p>
+                 <div class="mt-8">
+                     <a href=""
+                         class="text-base font-semibold rounded-full px-8 py-3 text-white bg-bata w-72 hover:opacity-80 transition duration-300 ease-in-out">
+                         Explore now
+                     </a>
+                 </div>
+             </div>
+             <div class="w-full self-end px-4 lg:w-1/2 overflow-hidden">
+                 <div class="relative mt-20 lg:-mt-10 lg:right-0">
+                     <img src="{{  asset ('assets/images/banner-2.png') }}" width="600" height="600"
+                         class="max-w-full mx-auto hidden md:block banner" alt="banner" id="banner">
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+
  <!-- end wrape-image -->
 
- <!-- about -->
- <div class="mt-24 about">
-     <div class="overflow-hidden lg:grid lg:grid-cols-12 ">
-         <div class="about-img lg:col-span-3 lg:col-end-6 ">
-             <img src="{{  asset ('assets/images/ex-about.jpg') }}">
-         </div>
-         <div class="max-w-lg mt-20 ml-10 text-2xl font-bold text-about text-midnight lg:col-span-5 ">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed mollitia quia at illum incidunt dicta
-             eius, repellendus ut a vero deserunt minus quo. Reprehenderit nobis aspernatur sit, quaerat ipsa ut.
-         </div>
-     </div>
-     <div class="container">
-     </div>
- </div>
- <!-- end about -->
-
  <!-- Product List -->
- <div class="px-4 mx-auto mt-20 bg-white border border-gray-200 rounded-lg shadow-md max-w-7xl card ">
+ <div class="px-4 mx-auto mt-20 bg-home border border-gray-200 rounded-lg shadow-md max-w-7xl card">
      <div class="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
          <h2 class="text-2xl font-bold tracking-tight text-gray-900">Our product list</h2>
          <div class="grid grid-cols-1 mt-6 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
              <div class="relative group">
-                 <div class="w-full overflow-hidden bg-gray-200 rounded-md min-h-80 aspect-w-1 aspect-h-1 group-hover:opacity-75 lg:aspect-none lg:h-80">
-                     <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="object-cover object-center w-full h-full lg:h-full lg:w-full">
+                 <div
+                     class="w-full overflow-hidden bg-gray-200 rounded-md min-h-80 aspect-w-1 aspect-h-1 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                     <img src="{{ asset('assets/images/1.png') }}" alt="sambel"
+                         class="object-cover object-center w-full h-full lg:h-full lg:w-full">
                  </div>
                  <div class="flex justify-between mt-4">
                      <div>
@@ -47,8 +62,10 @@
                  </div>
              </div>
              <div class="relative group">
-                 <div class="w-full overflow-hidden bg-gray-200 rounded-md min-h-80 aspect-w-1 aspect-h-1 group-hover:opacity-75 lg:aspect-none lg:h-80">
-                     <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="object-cover object-center w-full h-full lg:h-full lg:w-full">
+                 <div
+                     class="w-full overflow-hidden bg-gray-200 rounded-md min-h-80 aspect-w-1 aspect-h-1 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                     <img src="{{ asset('assets/images/2.png') }}" alt="sambel"
+                         class="object-cover object-center w-full h-full lg:h-full lg:w-full">
                  </div>
                  <div class="flex justify-between mt-4">
                      <div>
@@ -64,8 +81,10 @@
                  </div>
              </div>
              <div class="relative group">
-                 <div class="w-full overflow-hidden bg-gray-200 rounded-md min-h-80 aspect-w-1 aspect-h-1 group-hover:opacity-75 lg:aspect-none lg:h-80">
-                     <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="object-cover object-center w-full h-full lg:h-full lg:w-full">
+                 <div
+                     class="w-full overflow-hidden bg-gray-200 rounded-md min-h-80 aspect-w-1 aspect-h-1 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                     <img src="{{ asset('assets/images/4.png') }}" alt="sambel"
+                         class="object-cover object-center w-full h-full lg:h-full lg:w-full">
                  </div>
                  <div class="flex justify-between mt-4">
                      <div>
@@ -81,8 +100,10 @@
                  </div>
              </div>
              <div class="relative group">
-                 <div class="w-full overflow-hidden bg-gray-200 rounded-md min-h-80 aspect-w-1 aspect-h-1 group-hover:opacity-75 lg:aspect-none lg:h-80">
-                     <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="object-cover object-center w-full h-full lg:h-full lg:w-full">
+                 <div
+                     class="w-full overflow-hidden bg-gray-200 rounded-md min-h-80 aspect-w-1 aspect-h-1 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                     <img src="{{ asset('assets/images/3.png') }}" alt="sambel"
+                         class="object-cover object-center w-full h-full lg:h-full lg:w-full">
                  </div>
                  <div class="flex justify-between mt-4">
                      <div>
@@ -97,35 +118,70 @@
                      <p class="text-sm font-medium text-gray-900">$35</p>
                  </div>
              </div>
-
              <!-- More products... -->
          </div>
      </div>
  </div>
  <!-- End Product List -->
 
- <footer class="p-4 bg-white rounded-lg shadow container-fluid md:px-6 md:py-8">
+ <section class="about overflow-hidden bg-dof min-h-screen mt-20">
+     <div class="container ">
+         <div class="lg:grid lg:grid-cols-2 gap-4 mt-20">
+             <img src="{{  asset ('assets/images/bahan.png') }}" class="md:ml-52 px-5" width="600" height="600">
+             <div class="lg:mr-28 px-5 lg:mt-0 text-cream mt-5">
+                 <h1 class="text-7xl font-bold">Cita Rasa Nusantara</h1>
+                 <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quaerat earum aliquid
+                     suscipit!
+                     Perspiciatis molestias dolorum possimus. Velit quaerat sit reiciendis, reprehenderit aliquid, id
+                     aspernatur animi officia eos voluptatum eum!</p>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- end about -->
+
+ <!-- find us -->
+ <section class="find mt-20 h-auto ">
+     <div class="container mx-auto">
+         <h1 class="text-4xl md:text-4xl font-bold text-center text-brown">Find us</h1>
+         <div class="grid grid-cols-3 mt-20">
+             <a href="www.shopee.co.id">
+                 <img src="{{  asset ('assets/images/sosmed/1.png') }}" class="px-5 lg:ml-80 lg:w-1/2">
+             </a>
+             <a href="www.tiktok.com">
+                 <img src="{{  asset ('assets/images/sosmed/2.png') }}" class="px-5 lg:ml-28 lg:w-1/2">
+             </a>
+             <a href="{{ url (' www.tokopedia.com ') }}">
+                 <img src="{{  asset ('assets/images/sosmed/4.png') }}" class="px-5 lg:-ml-24 lg:w-1/2">
+             </a>
+         </div>
+ </section>
+ <!-- find us -->
+
+ <footer class="p-4 bg-dof shadow container-fluid md:px-6 md:py-8 container mx-auto mt-20">
      <div class="sm:flex sm:items-center sm:justify-between">
-         <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
-             <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo">
-             <span class="self-center text-2xl font-semibold whitespace-nowrap ">Flowbite</span>
+         <a href="" class="flex items-center mb-4 sm:mb-0">
+             <img src="{{ asset ('assets/images/logo.jpg')}}" width="50" height="50">
+             <span class="self-center text-2xl font-semibold whitespace-nowrap text-cream px-3">SN FOOD</span>
          </a>
-         <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+         <ul class="flex flex-wrap items-center mb-6 text-sm text-cream sm:mb-0 dark:text-gray-400">
              <li>
-                 <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                 <a href="#" class="mr-4 hover:underline md:mr-6 ">Shopee</a>
              </li>
              <li>
-                 <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                 <a href="#" class="mr-4 hover:underline md:mr-6">Tokopedia</a>
              </li>
              <li>
-                 <a href="#" class="mr-4 hover:underline md:mr-6 ">Licensing</a>
+                 <a href="#" class="mr-4 hover:underline md:mr-6 ">Instagram</a>
              </li>
              <li>
-                 <a href="#" class="hover:underline">Contact</a>
+                 <a href="#" class="hover:underline">Tiktok</a>
              </li>
          </ul>
      </div>
      <hr class="my-6 border-gray-300 sm:mx-auto lg:my-8">
-     <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">Moondev</a>. All Rights Reserved.
+     <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/"
+             class="hover:underline">Moondev</a>. All Rights Reserved.
      </span>
  </footer>
+ @endsection

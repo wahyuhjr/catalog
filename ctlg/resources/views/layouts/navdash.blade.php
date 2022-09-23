@@ -1,7 +1,7 @@
  <nav id="sidebar" class="sidebar js-sidebar">
      <div class="sidebar-content js-simplebar">
          <a class="sidebar-brand" href="index.html">
-             <span class="align-middle">AdminKit</span>
+             <span class="align-middle">Catalog</span>
          </a>
 
          <ul class="sidebar-nav">
@@ -9,7 +9,7 @@
                  Pages
              </li>
 
-             <li class="sidebar-item">
+             <li class="sidebar-item active">
                  <a class="sidebar-link" href="index.html">
                      <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
                  </a>
@@ -21,20 +21,7 @@
                  </a>
              </li>
 
-             <li class="sidebar-item">
-                 <a class="sidebar-link" href="pages-sign-in.html">
-                     <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Sign In</span>
-                 </a>
-             </li>
-
-             <li class="sidebar-item">
-                 <a class="sidebar-link" href="pages-sign-up.html">
-                     <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Sign
-                         Up</span>
-                 </a>
-             </li>
-
-             <li class="sidebar-item active">
+             <li class="sidebar-item ">
                  <a class="sidebar-link" href="pages-blank.html">
                      <i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
                  </a>
@@ -215,8 +202,14 @@
                                  data-feather="settings"></i> Settings & Privacy</a>
                          <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i>
                              Help Center</a>
-                         <div class="dropdown-divider"></div>
-                         <a class="dropdown-item" href="#">Log out</a>
+                         <!-- <div class="dropdown-divider"></div> -->
+                         <form class="dropdown-item" method="post" action="{{  route ('logout') }}">
+                             @csrf
+                             <a :href="route('logout')" onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                 {{ __('Log Out') }}
+                             </a>
+                         </form>
                      </div>
                  </li>
              </ul>

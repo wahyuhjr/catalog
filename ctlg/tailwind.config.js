@@ -12,6 +12,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                serif: ['Prata'],
             },
             colors: {
                 transparent: 'transparent',
@@ -24,6 +25,11 @@ module.exports = {
                 'silver': '#ecebff',
                 'bubble-gum': '#ff77e9',
                 'bermuda': '#78dcca',
+                'brown': '#76433B',
+                'cream': '#F4F4F4',
+                'oren': '#D79800',
+                'dof': '#272729',
+                'bata': '#8E1F20',
             },
         },
     },

@@ -1,4 +1,18 @@
 #nav {
-    position: fixed;
+    position: fixed !important;
     top: 0;
+    z-index: 1;
+}
+
+.bg-home {
+    background-image: url("../images/bg.jpg");
+    z-index: 3;
+}
+
+.banner {
+    z-index: 20;
+}
+
+#title {
+    font-family: 'Secular One', sans-serif;
 }

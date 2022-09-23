@@ -14,7 +14,7 @@
     <!-- <link rel="shortcut icon" href="{{  asset ('assets/img/icons/icon-48x48.png')  }}" /> -->
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/pages-blank.html" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Catalog</title>
     <!-- @vite(['resources/css/app.css', 'resources/js/app.js'])
     @vite('resources/js/app.js') -->
@@ -40,37 +40,47 @@
                         <table class="table table-hover ">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th class="d-none d-xl-table-cell">Start Date</th>
-                                    <th class="d-none d-xl-table-cell">End Date</th>
-                                    <th>Status</th>
-                                    <th class="d-none d-md-table-cell">Assignee</th>
+                                    <th>ID</th>
+                                    <th class="d-none d-xl-table-cell">Nama Produk</th>
+                                    <th class="d-none d-xl-table-cell">Deskripsi Produk</th>
+                                    <th>Harga</th>
+                                    <th class="d-none d-md-table-cell">Gambar</th>
+                                    <th class="d-none d-md-table-cell">Created at</th>
+                                    <th class="d-none d-md-table-cell">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Project Apollo</td>
+                                    <td>Nama Produk</td>
                                     <td class="d-none d-xl-table-cell">01/01/2021</td>
                                     <td class="d-none d-xl-table-cell">31/06/2021</td>
                                     <td><span class="badge bg-success">Done</span></td>
                                     <td class="d-none d-md-table-cell">Vanessa Tucker</td>
+                                    <td class="d-none d-xl-table-cell">31/06/2021</td>
+                                    <td class="d-none d-xl-table-cell">
+                                        <a type="submit" method="get" href="{{  url('/register')  }}">
+                                            <i class="material-icons" style="font-size:16px">border_color</i>
+                                        </a>
+                                        <i class="material-icons p-3" style="font-size:16px">visibility</i>
+                                        <i class="material-icons" style="font-size:16px">delete_sweep</i>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Project Fireball</td>
+                                    <td>Deskripsi Produk</td>
                                     <td class="d-none d-xl-table-cell">01/01/2021</td>
                                     <td class="d-none d-xl-table-cell">31/06/2021</td>
                                     <td><span class="badge bg-danger">Cancelled</span></td>
                                     <td class="d-none d-md-table-cell">William Harris</td>
                                 </tr>
                                 <tr>
-                                    <td>Project Hades</td>
+                                    <td>Harga Produk</td>
                                     <td class="d-none d-xl-table-cell">01/01/2021</td>
                                     <td class="d-none d-xl-table-cell">31/06/2021</td>
                                     <td><span class="badge bg-success">Done</span></td>
                                     <td class="d-none d-md-table-cell">Sharon Lessman</td>
                                 </tr>
                                 <tr>
-                                    <td>Project Nitro</td>
+                                    <td>Gambar</td>
                                     <td class="d-none d-xl-table-cell">01/01/2021</td>
                                     <td class="d-none d-xl-table-cell">31/06/2021</td>
                                     <td><span class="badge bg-warning">In progress</span></td>
@@ -103,6 +113,11 @@
                                     <td class="d-none d-xl-table-cell">31/06/2021</td>
                                     <td><span class="badge bg-warning">In progress</span></td>
                                     <td class="d-none d-md-table-cell">William Harris</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        asdas
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
