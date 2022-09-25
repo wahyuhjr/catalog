@@ -18,10 +18,11 @@
     <title>Catalog</title>
     <!-- @vite(['resources/css/app.css', 'resources/js/app.js'])
     @vite('resources/js/app.js') -->
-    <script src="https://cdn.tailwindcss.com/?plugins=forms"></script>
     <link href="{{  asset ('assets/css/app.css')  }}" rel="stylesheet">
     <link href="{{  asset ('assets/css/dashboard.css')  }}" rel="stylesheet">
-    <link href="{{  asset ('assets/css/paralax.css')  }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{  asset('assets/css/trix.css')  }}">
+    <script type="text/javascript" src="{{  asset('assets/css/trix.js')  }}"></script>
+
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -29,8 +30,6 @@
 <body>
     <div class="wrapper">
         @include('layouts.navdash')
-
-        <!-- table -->
         @yield('content')
 
     </div>

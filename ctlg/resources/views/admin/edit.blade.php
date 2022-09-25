@@ -11,7 +11,7 @@
         <div class="w-full px-16 py-5 overflow-hidden bg-white rounded-lg">
             <div class="mb-4">
                 <h1 class="text-3xl font-bold ">
-                    Create Post Produk
+                    Edit Post Produk
                 </h1>
             </div>
 
@@ -27,8 +27,7 @@
                                 </div>
                                 <div class="card-body">
                                     <input type="text" name="nama"
-                                        class="form-control @error('nama') is-invalid @enderror" placeholder=""
-                                        required>
+                                        class="form-control @error('nama') is-invalid @enderror" placeholder="">
                                     @error('nama')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -42,7 +41,7 @@
                                 </div>
                                 <div class="card-body">
                                     <input id="file-input" name="gambar" type="file"
-                                        class="form-control @error('gambar') is-invalid @enderror" required />
+                                        class="form-control @error('gambar') is-invalid @enderror" />
                                     @error('gambar')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -57,7 +56,7 @@
                                 <div class="card-body">
                                     <!-- <input id="deskripsi" type="hidden" name="deskripsi"> -->
                                     <textarea class="form-control @error('deskripsi') is-invalid @enderror"
-                                        name="deskripsi" required>
+                                        name="deskripsi">
                                     @error('deskripsi')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -72,8 +71,7 @@
                                 </div>
                                 <div class="card-body">
                                     <input type="text" name="harga"
-                                        class="form-control @error('harga') is-invalid @enderror" placeholder=""
-                                        required>
+                                        class="form-control @error('harga') is-invalid @enderror" placeholder="">
                                     @error('harga')
                                     <div class="invalid-feedback">
                                         {{ $message }}

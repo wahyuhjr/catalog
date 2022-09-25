@@ -50,15 +50,15 @@
                  </div>
                  <div class="flex justify-between mt-4">
                      <div>
-                         <h3 class="text-sm text-gray-700">
+                         <h3 class="text-sm text-gray-700 font-medium">
                              <a href="#">
                                  <span aria-hidden="true" class="absolute inset-0"></span>
-                                 Basic Tee
+                                 Crispy Fish Chili
                              </a>
                          </h3>
-                         <p class="mt-1 text-sm text-gray-500">Black</p>
+                         <p class="mt-1 text-sm text-gray-500">Pedas</p>
                      </div>
-                     <p class="text-sm font-medium text-gray-900">$35</p>
+                     <p class="text-sm font-medium text-gray-900">Rp.30.000</p>
                  </div>
              </div>
              <div class="relative group">
@@ -124,9 +124,9 @@
  </div>
  <!-- End Product List -->
 
- <section class="about overflow-hidden bg-dof min-h-screen mt-20">
+ <section class="about overflow-hidden bg-dof min-h-screen lg:mt-20 mt-0">
      <div class="container ">
-         <div class="lg:grid lg:grid-cols-2 gap-4 mt-20">
+         <div class="lg:grid lg:grid-cols-2 gap-4 lg:mt-20">
              <img src="{{  asset ('assets/images/bahan.png') }}" class="md:ml-52 px-5" width="600" height="600">
              <div class="lg:mr-28 px-5 lg:mt-0 text-cream mt-5">
                  <h1 class="text-7xl font-bold">Cita Rasa Nusantara</h1>

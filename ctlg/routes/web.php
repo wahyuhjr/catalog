@@ -1,12 +1,15 @@
 <?php
 
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\LoginUserController;
 use App\Http\Controllers\Auth\RegisteredUserController;
-use App\Models\User;
-use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\CreateController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,11 +33,16 @@ Route::get('index', function () {
 Route::get('create', function () {
     return view('admin.create');
 });
+Route::get('edit', function () {
+    return view('admin.edit');
+});
+
+Route::resource('/dashboard', DashboardController::class)->middleware('auth');
+Route::delete('/dashboard', [DashboardController::class, 'destroy'])->middleware('auth');
 
 
-
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('admin.dashboard');
+// })->middleware(['auth'])->name('');
 
 require __DIR__ . '/auth.php';

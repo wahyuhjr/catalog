@@ -23,7 +23,7 @@ class AdminUser extends Seeder
             'email_verified_at' => date('Y-m-d H:i:s', time()),
             'password' => Hash::make('wahyujr123'),
             'created_at' => date('Y-m-d H:i:s', time()),
-            'updated_at' => date('Y-m-d H:i:s', time()),
+            // 'updated_at' => date('Y-m-d H:i:s', time()),
         ]);
     }
 }
