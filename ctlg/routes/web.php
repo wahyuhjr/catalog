@@ -3,12 +3,14 @@
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\CreateController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\LoginUserController;
 use App\Http\Controllers\Auth\RegisteredUserController;
-use App\Http\Controllers\CreateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,9 +29,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('index', function () {
-    return view('index');
-});
+Route::get('/index', [HomeController::class, 'index']);
+// Route::get('index', function () {
+//     return view('index');
+// });
 Route::get('create', function () {
     return view('admin.create');
 });
@@ -38,7 +41,8 @@ Route::get('edit', function () {
 });
 
 Route::resource('/dashboard', DashboardController::class)->middleware('auth');
-Route::delete('/dashboard', [DashboardController::class, 'destroy'])->middleware('auth');
+Route::resource('/datacontent', IndexController::class)->middleware('auth');
+// Route::delete('/dashboard', [DashboardController::class, 'destroy'])->middleware('auth');
 
 
 // Route::get('/dashboard', function () {

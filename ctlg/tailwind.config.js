@@ -29,7 +29,7 @@ module.exports = {
                 'cream': '#F4F4F4',
                 'oren': '#D79800',
                 'dof': '#272729',
-                'bata': '#8E1F20',
+                'bata': '#C32325',
             },
         },
     },

@@ -10,14 +10,14 @@
              </li>
 
              <li class="sidebar-item">
-                 <a class="sidebar-link {{ Request::is('dashboard')? 'active' : '' }}" href="index.html">
-                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+                 <a class="sidebar-link {{ Request::is('dashboard')? 'active' : '' }}" href="{{  url ('datacontent')  }}">
+                     <i class="align-middle" data-feather="home"></i> <span class="align-middle">Home</span>
                  </a>
              </li>
 
              <li class="sidebar-item">
-                 <a class="sidebar-link" href="pages-profile.html">
-                     <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+                 <a class="sidebar-link" href="{{  url('dashboard')  }}">
+                     <i class="align-middle" data-feather="package"></i> <span class="align-middle">Produk</span>
                  </a>
              </li>
 

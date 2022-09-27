@@ -72,9 +72,11 @@ class DashboardController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function edit(Post $post)
+    public function edit($dashboard)
     {
-        return.view('admin.edit')
+        return view('admin.edit', [
+            'product' => Post::find($dashboard)
+        ]);
     }
 
     /**
@@ -84,9 +86,29 @@ class DashboardController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, $dashboard)
     {
-        //
+
+        $request->validate([
+            'nama' => 'required|max:225',
+            'gambar' => 'nullable|image',
+            'deskripsi' => 'required',
+            'harga' => 'required'
+        ]);
+
+        $data = [];
+        $data['nama'] = $request->nama;
+        $data['deskripsi'] = $request->deskripsi;
+        if (isset($request->gambar)) {
+            $tujuan_upload = 'data_file';
+            $request->gambar->move($tujuan_upload,$request->gambar->getClientOriginalName());
+            $data['gambar'] = $tujuan_upload . '/' . $request->gambar->getClientOriginalName();
+        }
+        $data['harga'] = $request->harga;
+
+        Post::where('id_produk', $dashboard)->update($data);
+
+        return redirect('/dashboard')->with('success', 'Data has been updated');
     }
 
     /**
@@ -95,9 +117,9 @@ class DashboardController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy($product)
+    public function destroy($dashboard)
     {
-        $post = Post::find($product);
+        $post = Post::find($dashboard);
         // Post::destroy($product->id_produk);
         // return $product;
         $post->delete();
