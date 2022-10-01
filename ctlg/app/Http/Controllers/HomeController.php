@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\DataContent;
 use App\Models\Post;
+use App\Models\DataContent;
+use App\Models\HomeContent;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -12,7 +13,8 @@ class HomeController extends Controller
     {
         return view('index', [
             'products' => Post::get(),
-            'contents' => DataContent::get(),
+            // 'contents' => DataContent::get(),
+            'contents' => HomeContent::get(),
         ]);
     }
 }

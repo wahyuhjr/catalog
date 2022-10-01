@@ -1,18 +1,6 @@
  @extends('layouts.app')
 
- @php 
- 
- function getContentIdentify($identify, $contents) {
-    $resContent = "";
-    foreach($contents as $dataContent) {
-        if ($dataContent->identify == $identify) {
-            $resContent = $dataContent->value;
-        }
-    }
-    return $resContent;
- }
 
- @endphp
  
  @section('content')
 
@@ -20,14 +8,16 @@
  <!-- wrape-image -->
  <section id="home" class="relative pt-36 h-screen bg-sambal">
      <div class="container mx-auto">
+         @foreach ($contents as $datacontent)
          <div class="title top-1/4">
          <h1 class="font-bold text-7xl text-center text-bata mb-0 " id="title">
-            SN FOOD
-         </h1>
-         <p class="text-white font-semibold text-2xl mt-10 max-w-4xl max-auto" id="subtitle">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro earum nobis animi nisi. Inventore, laudantium, atque maiores tenetur debitis nesciunt, possimus illum officiis repellat labore obcaecati necessitatibus odit! Non, numquam?
-         </p>
-         </div>
+            {{ $datacontent->title }}
+        </h1>
+        <p class="text-white font-semibold text-2xl mt-10 max-w-4xl max-auto" id="subtitle">
+        {{ $datacontent->desc }}
+            </p>
+        </div>
+        @endforeach
      </div>
  </section>
 
@@ -35,10 +25,9 @@
 
  <!-- Product List -->
  <div class="px-4 mx-auto mt-20 bg-home border border-gray-200 rounded-lg shadow-md card lg:px-0 lg:mt-0">
-     <div class="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+     <div class=" px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
          <h2 class="text-2xl font-bold tracking-tight text-bata">Our product list</h2>
          <div class="grid grid-cols-1 mt-6 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-
          @foreach($products as $product)
              <div class="relative group">
                  <div
@@ -46,17 +35,18 @@
                      <img src="{{ asset($product->gambar) }}" alt="sambel"
                          class="object-cover object-center w-full h-full lg:h-full lg:w-full">
                  </div>
-                 <div class="flex justify-between mt-4">
-                     <div>
+                 <div class="flex justify-between mt-4 ">
+                     <div class="text-center">
                          <h3 class="text-sm text-gray-700 font-medium">
                              <a href="#">
-                                 <span aria-hidden="true" class="absolute inset-0"></span>
                                  {{  $product->nama  }}
                              </a>
                          </h3>
-                         <p class="mt-1 text-sm text-gray-500">{{  $product->deskripsi  }}</p>
-                     </div>
-                     <p class="text-sm font-medium text-gray-900">Rp.{{ number_format($product->harga, 2,',','.') }}</p>
+                        <div class="deskripsi text-center">
+                        <p class="mt-1 text-sm text-bata" id="deskripsi">{{  $product->deskripsi  }}</p>
+                        </div>
+                         <p class="text-sm font-medium text-bata mt-2">Rp.{{ number_format($product->harga, 2,',','.') }}</p>
+                        </div>
                  </div>
              </div>
              @endforeach
@@ -66,16 +56,18 @@
  </div>
  <!-- End Product List -->
 
- <section class="about overflow-hidden bg-dof min-h-screen lg:max-h-screen mt-0">
-     <div class="container mx-auto">
-         <div class="lg:grid lg:grid-cols-2 gap-4 lg:mt-52">
-             <img src="{{  asset ('assets/images/bahan.png') }}" class="md:ml-52 px-5" width="600" height="600">
+ <section class="about overflow-hidden bg-dof min-h-screen lg:max-h-screen mb-0">
+        @foreach($contents as $datacontent)
+        <div class="container mx-auto">
+         <div class="lg:grid lg:grid-cols-2 gap-4 lg:mt-24">
+             <img src="{{  asset ($datacontent->about_image) }}" class="md:ml-52 px-5 mb-0" width="600" height="600">
              <div class="lg:mr-28 px-5 lg:mt-0  mt-5">
-                 <h1 class="text-7xl font-bold text-white">  {{ getContentIdentify("ABOUT_TITLE", $contents) }}</h1>
-                 <p class="mt-5 mb-20 text-oren">  {{ getContentIdentify("ABOUT_DESC", $contents) }}</p>
+                 <h1 class="text-7xl font-bold text-white">{{ $datacontent->about_title   }}  </h1>
+                 <p class="mt-5 mb-20 text-oren">{{ $datacontent->about_desc   }}  </p>
              </div>
          </div>
      </div>
+        @endforeach
  </section>
  <!-- end about -->
 

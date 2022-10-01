@@ -47,8 +47,11 @@ class DashboardController extends Controller
             'harga' => 'required'
         ]);
 
-        $validatedData['id'] = auth()->user()->id;
-        $validatedData['deskripsi'] = Str::limit(strip_tags($request->deskripsi), 200);
+        if (isset($request->gambar)) {
+            $tujuan_upload = 'data_file';
+            $request->gambar->move($tujuan_upload,$request->gambar->getClientOriginalName());
+            $validatedData['gambar'] = $tujuan_upload . '/' . $request->gambar->getClientOriginalName();
+        }
 
         Post::create($validatedData);
 

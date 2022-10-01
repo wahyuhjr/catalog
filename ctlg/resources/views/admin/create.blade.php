@@ -56,8 +56,8 @@
                                 </div>
                                 <div class="card-body">
                                     <!-- <input id="deskripsi" type="hidden" name="deskripsi"> -->
-                                    <textarea class="form-control @error('deskripsi') is-invalid @enderror"
-                                        name="deskripsi" required>
+                                    <textarea class="myTextarea form-control @error('deskripsi') is-invalid @enderror"
+                                        name="deskripsi" required id="myTextarea">
                                     @error('deskripsi')
                                     <div class="invalid-feedback">
                                         {{ $message }}
