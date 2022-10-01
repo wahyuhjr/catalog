@@ -58,8 +58,8 @@
                                 </div>
                                 <div class="card-body">
                                     <!-- <input id="deskripsi" type="hidden" name="deskripsi"> -->
-                                    <textarea class="ckeditor form-control @error('deskripsi') is-invalid @enderror"
-                                        name="deskripsi" id="editor">{{ $product->deskripsi }}
+                                    <textarea class="myTextarea form-control @error('deskripsi') is-invalid @enderror"
+                                        name="deskripsi" id="myTextarea">{{ $product->deskripsi }}
                                     </textarea>
                                     @error('deskripsi')
                                     <div class="invalid-feedback">

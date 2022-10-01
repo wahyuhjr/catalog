@@ -23,8 +23,6 @@ class IndexController extends Controller
    public function store(Request $request)
    {
 
-
-
     $validatedData = $request->validate([
         'title' => 'required',
         'desc' => 'required',
@@ -50,6 +48,28 @@ class IndexController extends Controller
     return view('admin.editcontent', [
         'contents' => HomeContent::find($dataContent)
     ]);
+   }
+
+   public function update(Request $request, $dataContent)
+   {
+    $data = $request->validate([
+        'title' => 'required',
+        'desc' => 'required',
+        'about_title' =>'required',
+        'about_desc' => 'required',
+        'about_image' => 'image|nullable',
+    ]);
+    
+
+    if (isset($request->about_image)) {
+        $tujuan_upload = 'data_file';
+        $request->about_image->move($tujuan_upload,$request->about_image->getClientOriginalName());
+        $data['about_image'] = $tujuan_upload . '/' . $request->about_image->getClientOriginalName();
+    }
+
+    HomeContent::where('id', $dataContent)->update($data);
+
+    return redirect('/datacontent')->with('success', 'Data has been updated');
    }
 
    public function destroy($dataContent)

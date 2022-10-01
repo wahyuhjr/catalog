@@ -10,6 +10,8 @@ class HomeContent extends Model
     protected $table = "home";
     use HasFactory;
 
+    protected $primaryKey = 'id';
+
     protected $fillable = [
         'title',
         'desc',
