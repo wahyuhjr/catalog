@@ -11,11 +11,11 @@
          @foreach ($contents as $datacontent)
          <div class="title top-1/4">
          <h1 class="font-bold text-7xl text-center text-bata mb-0 " id="title">
-            {{ $datacontent->title }}
+            {{   $datacontent->title   }}
         </h1>
-        <p class="text-white font-semibold text-2xl mt-10 max-w-4xl max-auto" id="subtitle">
-        {{ $datacontent->desc }}
-            </p>
+        <div class="text-white font-semibold text-2xl  max-w-4xl max-auto" id="subtitle">
+        {!! $datacontent->desc !!}
+            </div>
         </div>
         @endforeach
      </div>
@@ -35,7 +35,7 @@
                      <img src="{{ asset($product->gambar) }}" alt="sambel"
                          class="object-cover object-center w-full h-full lg:h-full lg:w-full">
                  </div>
-                 <div class="flex justify-between mt-4 ">
+                 <div class="flex justify-center mt-4 ">
                      <div class="text-center">
                          <h3 class="text-sm text-gray-700 font-medium">
                              <a href="#">
@@ -43,7 +43,7 @@
                              </a>
                          </h3>
                         <div class="deskripsi text-center">
-                        <p class="mt-1 text-sm text-bata" id="deskripsi">{{  $product->deskripsi  }}</p>
+                        <div class="mt-1 text-sm text-bata" id="deskripsi">{!!  $product->deskripsi  !!}</div>
                         </div>
                          <p class="text-sm font-medium text-bata mt-2">Rp.{{ number_format($product->harga, 2,',','.') }}</p>
                         </div>
@@ -63,7 +63,7 @@
              <img src="{{  asset ($datacontent->about_image) }}" class="md:ml-52 px-5 mb-0" width="600" height="600">
              <div class="lg:mr-28 px-5 lg:mt-0  mt-5">
                  <h1 class="text-7xl font-bold text-white">{{ $datacontent->about_title   }}  </h1>
-                 <p class="mt-5 mb-20 text-oren">{{ $datacontent->about_desc   }}  </p>
+                 <div class="mt-5 mb-20 text-oren">{!! $datacontent->about_desc   !!}  </div>
              </div>
          </div>
      </div>
@@ -74,8 +74,8 @@
  <!-- find us -->
  <section class="find h-96 bg-home ">
  <div class="container mx-auto ">
-         <div class="shop">
-         <h1 class="text-4xl md:text-4xl font-bold text-center text-bata ">Find us</h1>
+         <div class="shop ">
+         <div class="text-4xl md:text-4xl font-bold text-center text-bata ">Find us</div>
          <div class="grid grid-cols-3 mt-28">
              <a href="www.shopee.co.id">
                  <img src="{{  asset ('assets/images/sosmed/1.png') }}" class="px-5 lg:ml-80 lg:w-1/2">

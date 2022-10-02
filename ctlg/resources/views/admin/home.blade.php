@@ -20,8 +20,8 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th class="d-none d-xl-table-cell">Idintify Title</th>
-                                <th class="d-none d-xl-table-cell">Idintify Desc</th>
+                                <th class="d-none d-xl-table-cell">Title</th>
+                                <th class="d-none d-xl-table-cell"> Description</th>
                                 <th class="d-none d-xl-table-cell">About Title</th>
                                 <th class="d-none d-xl-table-cell">About Desc</th>
                                 <th class="d-none d-xl-table-cell">About Image</th>
