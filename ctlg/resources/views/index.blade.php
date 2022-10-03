@@ -6,14 +6,14 @@
 
 
  <!-- wrape-image -->
- <section id="home" class="relative pt-36 h-screen bg-sambal">
+ <section id="home" class="relative pt-36 h-screen bg-sambal" id="home">
      <div class="container mx-auto">
          @foreach ($contents as $datacontent)
          <div class="title top-1/4">
-         <h1 class="font-bold text-7xl text-center text-bata mb-0 " id="title">
+         <h1 class="font-bold text-7xl text-center text-bata mb-0" id="title">
             {{   $datacontent->title   }}
         </h1>
-        <div class="text-white font-semibold text-2xl  max-w-4xl max-auto" id="subtitle">
+        <div class="text-white font-semibold text-2xl  max-w-4xl max-auto mt-5" id="subtitle">
         {!! $datacontent->desc !!}
             </div>
         </div>
@@ -24,7 +24,7 @@
  <!-- end wrape-image -->
 
  <!-- Product List -->
- <div class="px-4 mx-auto mt-20 bg-home border border-gray-200 rounded-lg shadow-md card lg:px-0 lg:mt-0">
+ <div class="px-4 mx-auto mt-20 bg-home border border-gray-200 rounded-lg shadow-md card lg:px-0 lg:mt-0" id="product">
      <div class=" px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
          <h2 class="text-2xl font-bold tracking-tight text-bata">Our product list</h2>
          <div class="grid grid-cols-1 mt-6 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
@@ -56,12 +56,12 @@
  </div>
  <!-- End Product List -->
 
- <section class="about overflow-hidden bg-dof min-h-screen lg:max-h-screen mb-0">
+ <section class="about overflow-hidden bg-dof lg:h-screen lg:max-h-screen mb-0" id="about">
         @foreach($contents as $datacontent)
-        <div class="container mx-auto">
-         <div class="lg:grid lg:grid-cols-2 gap-4 lg:mt-24">
-             <img src="{{  asset ($datacontent->about_image) }}" class="md:ml-52 px-5 mb-0" width="600" height="600">
-             <div class="lg:mr-28 px-5 lg:mt-0  mt-5">
+        <div class="container mx-auto ">
+         <div class="lg:grid lg:grid-cols-2 gap-4 lg:mt-40">
+             <img src="{{  asset ($datacontent->about_image) }}" class="md:ml-52 px-5 mb-0" width="500" height="500">
+             <div class="lg:mr-24 px-5 lg:mt-0  mt-5" id="about-text">
                  <h1 class="text-7xl font-bold text-white">{{ $datacontent->about_title   }}  </h1>
                  <div class="mt-5 mb-20 text-oren">{!! $datacontent->about_desc   !!}  </div>
              </div>
@@ -72,7 +72,7 @@
  <!-- end about -->
 
  <!-- find us -->
- <section class="find h-96 bg-home ">
+ <section class="find h-96 bg-home " id="shop">
  <div class="container mx-auto ">
          <div class="shop ">
          <div class="text-4xl md:text-4xl font-bold text-center text-bata ">Find us</div>
@@ -91,7 +91,7 @@
  </section>
  <!-- find us -->
 
- <footer class="p-4 bg-dof shadow  md:px-6     ">
+ <footer class="p-4 bg-dof shadow  md:px-6">
     <div class="container mx-auto">
 
         <div class="sm:flex sm:items-center sm:justify-between">

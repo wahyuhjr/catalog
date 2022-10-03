@@ -1,4 +1,6 @@
  <link href="{{ asset (' assets/css/home.css ') }}" rel="stylesheet">
+
+
  <div class="w-full bg-bata dark-mode:text-midnight-200 dark-mode:bg-bata-800 text-white " id="nav"
      style="position:fixed;">
      <div x-data="{ open: false }"
@@ -6,7 +8,7 @@
          <div class="flex flex-row items-center justify-between p-4">
              <a href="#"
                  class="text-lg font-semibold tracking-widest uppercase rounded-lg dark-mode:text-white focus:shadow-outline text-midnight-900 focus:outline-none">
-                 <img src="{{ asset ('assets/images/logo.jpg')}}" width="50" height="50">
+                 <img src="{{ asset ('assets/images/logo.jpg')}}" width="70" height="50">
              </a>
              
              <button class="rounded-lg focus:shadow-outline focus:outline-none md:hidden" @click="open = !open">
@@ -23,13 +25,13 @@
          <nav :class="{'flex': open, 'hidden': !open}"
              class="flex-col flex-grow hidden pb-4 md:flex md:flex-row md:justify-center md:pb-0 ">
              <a class="px-4 py-2 mt-2 text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
-                 href="#">Home</a>
+                 href="#home">Home</a>
              <a class="px-4 py-2 mt-2 text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
-                 href="#">Product</a>
+                 href="#product">Product</a>
              <a class="px-4 py-2 mt-2 text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
-                 href="#">About</a>
+                 href="#about">About</a>
              <a class="px-4 py-2 mt-2 text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
-                 href="#">Shop</a>
+                 href="#shop">Shop</a>
          </nav>
      </div>
  </div>

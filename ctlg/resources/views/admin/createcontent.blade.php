@@ -1,7 +1,6 @@
 @extends('layouts.dashboardadmin') @section('content')
 
 
-</script>
 <style>
     .btn {
         width: 200px;
