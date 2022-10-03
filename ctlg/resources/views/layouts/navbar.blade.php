@@ -1,7 +1,7 @@
  <link href="{{ asset (' assets/css/home.css ') }}" rel="stylesheet">
 
 
- <div class="w-full bg-bata dark-mode:text-midnight-200 dark-mode:bg-bata-800 text-white " id="nav"
+ <div class="w-full bg-bata dark-mode:text-midnight-200 dark-mode:bg-bata-800 scroll-smooth text-white " id="nav"
      style="position:fixed;">
      <div x-data="{ open: false }"
          class="flex flex-col max-w-screen-xl px-4 mx-auto md:flex-row md:items-center md:justify-between md:px-6 lg:px-8">

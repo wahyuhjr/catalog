@@ -18,6 +18,9 @@ class HomeContent extends Model
         'about_title',
         'about_desc',
         'about_image',
+        'link_tokped',
+        'link_tiktok',
+        'link_shopee',
      ];
 
      public $timestamps = false;

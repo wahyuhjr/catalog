@@ -24,7 +24,7 @@
                             <h1 class=" text-3xl font-bold "> Edit Data Content</h1>
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-title mb-0 ">Identify Title</h5>
+                                    <h5 class="card-title mb-0 "> Title</h5>
                                 </div>
                                 <div class="card-body">
                                     <input type="text" name="title" class="form-control @error('title') is-invalid @enderror" placeholder="" 
@@ -38,10 +38,10 @@
                             </div>
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-title mb-0 ">Identify Description</h5>
+                                    <h5 class="card-title mb-0 "> Description</h5>
                                 </div>
                                 <div class="card-body">
-                                    <textarea class="myTextarea  @error('desc') is-invalid @enderror" name="desc" id="myTextarea">
+                                    <textarea class="myTextarea  @error('desc') is-invalid @enderror" name="desc" id="myTextarea" value="{{ $contents->desc }}">
                                     {{ $contents->desc }}    
                                 </textarea> @error('desc')
                                     <div class="invalid-feedback">
@@ -70,7 +70,7 @@
                                     <h5 class="card-title mb-0 ">About Description</h5>
                                 </div>
                                 <div class="card-body">
-                                    <textarea class="myTextarea  @error('about_desc') is-invalid @enderror" name="about_desc" id="myTextarea">{{ $contents->about_desc }}
+                                    <textarea class="myTextarea  @error('about_desc') is-invalid @enderror" name="about_desc" id="myTextarea" value="{{ $contents->about_desc }}">{{ $contents->about_desc }}
                                     </textarea> @error('desc')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -84,6 +84,42 @@
                                 </div>
                                 <div class="card-body">
                                     <input id="file-input" name="about_image" type="file" class="form-control @error('about_image') is-invalid @enderror" enctype="multipart/form-data" value="{{ $contents->about_image }}"/> @error('about_image')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">Link Tokpedia</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="link_tokped" class="form-control @error('link_tokped') is-invalid @enderror" placeholder="" value="{{ $contents->link_tokped }}"> @error('about_title')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">Link Tiktok</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="link_tiktok" class="form-control @error('link_tiktok') is-invalid @enderror" placeholder="" value="{{ $contents->link_tiktok }}"> @error('about_title')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">Link Shopee</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="link_shopee" class="form-control @error('link_shopee') is-invalid @enderror" placeholder="" value="{{ $contents->link_shopee }}"> @error('about_title')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>

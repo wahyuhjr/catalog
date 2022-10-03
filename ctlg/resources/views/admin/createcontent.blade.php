@@ -85,6 +85,42 @@
                                     @enderror
                                 </div>
                             </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">Link Tokpedia</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="link_tokped" class="form-control @error('link_tokped') is-invalid @enderror" placeholder=""> @error('about_title')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">Link Tiktok</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="link_tiktok" class="form-control @error('link_tiktok') is-invalid @enderror" placeholder=""> @error('about_title')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">Link Shopee</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="link_shopee" class="form-control @error('link_shopee') is-invalid @enderror" placeholder=""> @error('about_title')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
                             <button class="btn btn-primary" type="submit">Save</button>
                         </div>
                     </div>

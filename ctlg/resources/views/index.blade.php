@@ -72,28 +72,29 @@
  <!-- end about -->
 
  <!-- find us -->
- <section class="find h-96 bg-home " id="shop">
- <div class="container mx-auto ">
+ <section class="find lg:h-96 bg-home h-48" id="shop">
+    @foreach($contents as $datacontent)
+    <div class="container mx-auto ">
          <div class="shop ">
          <div class="text-4xl md:text-4xl font-bold text-center text-bata ">Find us</div>
-         <div class="grid grid-cols-3 mt-28">
-             <a href="www.shopee.co.id">
+         <div class="grid grid-cols-3 lg:mt-28 mt-10">
+             <a href=" {{ $datacontent->link_tokped }}">
                  <img src="{{  asset ('assets/images/sosmed/1.png') }}" class="px-5 lg:ml-80 lg:w-1/2">
              </a>
-             <a href="www.tiktok.com">
+             <a href=" {{ $datacontent->link_tokped }}">
                  <img src="{{  asset ('assets/images/sosmed/2.png') }}" class="px-5 lg:ml-28 lg:w-1/2">
              </a>
-             <a href="{{ url (' www.tokopedia.com ') }}">
+             <a href=" {{ $datacontent->link_tokped }}">
                  <img src="{{  asset ('assets/images/sosmed/4.png') }}" class="px-5 lg:-ml-24 lg:w-1/2">
              </a>
          </div>
-         </div>
+    </div>
+    @endforeach
  </section>
  <!-- find us -->
 
- <footer class="p-4 bg-dof shadow  md:px-6">
+ <footer class="p-4 lg:h-screen bg-dof shadow  md:px-6">
     <div class="container mx-auto">
-
         <div class="sm:flex sm:items-center sm:justify-between">
             <a href="" class="flex items-center mb-4 sm:mb-0">
                 <img src="{{ asset ('assets/images/logo.jpg')}}" width="50" height="50">
@@ -115,7 +116,7 @@
             </ul>
         </div>
         <hr class="my-6 border-gray-300 sm:mx-auto lg:my-8">
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/"
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="#home"
                 class="hover:underline">Moondev</a>. All Rights Reserved.
         </span>
     </div>

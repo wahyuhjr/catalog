@@ -29,6 +29,9 @@ class IndexController extends Controller
         'about_title' =>'required',
         'about_desc' => 'required',
         'about_image' => 'image|nullable',
+        'link_tokped' => 'nullable',
+        'link_tiktok' => 'nullable',
+        'link_shopee' => 'nullable',
     ]);
     
 
@@ -57,7 +60,9 @@ class IndexController extends Controller
         'desc' => 'required',
         'about_title' =>'required',
         'about_desc' => 'required',
-        'about_image' => 'image|nullable',
+        'about_image' => 'image|nullable','link_tokped' => 'nullable',
+        'link_tiktok' => 'nullable',
+        'link_shopee' => 'nullable',
     ]);
     
 
