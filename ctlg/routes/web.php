@@ -9,6 +9,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CreateController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DetailProdukController;
 use App\Http\Controllers\Auth\LoginUserController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 
@@ -42,6 +43,7 @@ Route::get('edit', function () {
 
 Route::resource('/dashboard', DashboardController::class)->middleware('auth');
 Route::resource('/datacontent', IndexController::class)->middleware('auth');
+Route::resource('/detailproduk', DetailProdukController::class)->middleware('auth');
 // Route::delete('/dashboard', [DashboardController::class, 'destroy'])->middleware('auth');
 
 

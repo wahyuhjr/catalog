@@ -18,6 +18,7 @@ class HomeContent extends Model
         'about_title',
         'about_desc',
         'about_image',
+        'harga',
         'link_tokped',
         'link_tiktok',
         'link_shopee',

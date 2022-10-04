@@ -48,9 +48,10 @@
 
 
                             <h1 class="font-bold p-3">About Section</h1>
+
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-title mb-0 ">About Title</h5>
+                                    <h5 class="card-title mb-0 ">About Title 1</h5>
                                 </div>
                                 <div class="card-body">
                                     <input type="text" name="about_title" class="form-control @error('about_title') is-invalid @enderror" placeholder=""> @error('about_title')
@@ -59,10 +60,8 @@
                                     </div>
                                     @enderror
                                 </div>
-                            </div>
-                            <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-title mb-0 ">About Description</h5>
+                                    <h5 class="card-title mb-0 ">About Description 1</h5>
                                 </div>
                                 <div class="card-body">
                                     <textarea class="myTextarea  @error('about_desc') is-invalid @enderror" name="about_desc" id="myTextarea">
@@ -72,10 +71,8 @@
                                     </div>
                                     @enderror
                                 </div>
-                            </div>
-                            <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-title mb-0 ">About Image</h5>
+                                    <h5 class="card-title mb-0 ">About Image 1</h5>
                                 </div>
                                 <div class="card-body">
                                     <input id="file-input" name="about_image" type="file" class="form-control @error('about_image') is-invalid @enderror" enctype="multipart/form-data" /> @error('about_image')
@@ -84,7 +81,196 @@
                                     </div>
                                     @enderror
                                 </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0">Harga Produk 1</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="harga" class="form-control @error('harga') is-invalid @enderror" placeholder=""> @error('harga')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
                             </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">About Title 2</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="about_title" class="form-control @error('about_title') is-invalid @enderror" placeholder=""> @error('about_title')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">About Description 2</h5>
+                                </div>
+                                <div class="card-body">
+                                    <textarea class="myTextarea  @error('about_desc') is-invalid @enderror" name="about_desc" id="myTextarea">
+                                    </textarea> @error('desc')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">About Image 2</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input id="file-input" name="about_image" type="file" class="form-control @error('about_image') is-invalid @enderror" enctype="multipart/form-data" /> @error('about_image')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0">Harga Produk 2</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="harga" class="form-control @error('harga') is-invalid @enderror" placeholder=""> @error('harga')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">About Title 3</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="about_title" class="form-control @error('about_title') is-invalid @enderror" placeholder=""> @error('about_title')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">About Description 3</h5>
+                                </div>
+                                <div class="card-body">
+                                    <textarea class="myTextarea  @error('about_desc') is-invalid @enderror" name="about_desc" id="myTextarea">
+                                    </textarea> @error('desc')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">About Image 3</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input id="file-input" name="about_image" type="file" class="form-control @error('about_image') is-invalid @enderror" enctype="multipart/form-data" /> @error('about_image')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0">Harga Produk 3</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="harga" class="form-control @error('harga') is-invalid @enderror" placeholder=""> @error('harga')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">About Title 4</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="about_title" class="form-control @error('about_title') is-invalid @enderror" placeholder=""> @error('about_title')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">About Description 4</h5>
+                                </div>
+                                <div class="card-body">
+                                    <textarea class="myTextarea  @error('about_desc') is-invalid @enderror" name="about_desc" id="myTextarea">
+                                    </textarea> @error('desc')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">About Image 4</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input id="file-input" name="about_image" type="file" class="form-control @error('about_image') is-invalid @enderror" enctype="multipart/form-data" /> @error('about_image')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0">Harga Produk 4</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="harga" class="form-control @error('harga') is-invalid @enderror" placeholder=""> @error('harga')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">About Title 5</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="about_title" class="form-control @error('about_title') is-invalid @enderror" placeholder=""> @error('about_title')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">About Description 5</h5>
+                                </div>
+                                <div class="card-body">
+                                    <textarea class="myTextarea  @error('about_desc') is-invalid @enderror" name="about_desc" id="myTextarea">
+                                    </textarea> @error('desc')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">About Image 5</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input id="file-input" name="about_image" type="file" class="form-control @error('about_image') is-invalid @enderror" enctype="multipart/form-data" /> @error('about_image')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0">Harga Produk 5</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="harga" class="form-control @error('harga') is-invalid @enderror" placeholder=""> @error('harga')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+
+
+
+                            <!-- link sosmed -->
                             <div class="card">
                                 <div class="card-header">
                                     <h5 class="card-title mb-0 ">Link Tokpedia</h5>

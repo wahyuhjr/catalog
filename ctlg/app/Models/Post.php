@@ -15,7 +15,6 @@ class Post extends Model
         'nama',
         'gambar',
         'deskripsi',
-        'harga',
         'updated_at',
         'created_at',
     ];

@@ -50,12 +50,11 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="card">
+                            <!-- <div class="card">
                                 <div class="card-header">
                                     <h5 class="card-title mb-0">Deskripsi</h5>
                                 </div>
                                 <div class="card-body">
-                                    <!-- <input id="deskripsi" type="hidden" name="deskripsi"> -->
                                     <textarea class="myTextarea form-control @error('deskripsi') is-invalid @enderror"
                                         name="deskripsi" required id="myTextarea">
                                     @error('deskripsi')
@@ -65,22 +64,7 @@
                                     @enderror
                                     </textarea>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <h5 class="card-title mb-0">Harga</h5>
-                                </div>
-                                <div class="card-body">
-                                    <input type="text" name="harga"
-                                        class="form-control @error('harga') is-invalid @enderror" placeholder=""
-                                        required>
-                                    @error('harga')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                    @enderror
-                                </div>
-                            </div>
+                            </div> -->
                             <button class="btn btn-primary" type="submit">Save</button>
                         </div>
                     </div>

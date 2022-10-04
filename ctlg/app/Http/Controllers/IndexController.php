@@ -24,11 +24,12 @@ class IndexController extends Controller
    {
 
     $validatedData = $request->validate([
-        'title' => 'required',
-        'desc' => 'required',
-        'about_title' =>'required',
-        'about_desc' => 'required',
+        'title' => 'nullable',
+        'desc' => 'nullable',
+        'about_title' =>'nullable',
+        'about_desc' => 'nullable',
         'about_image' => 'image|nullable',
+        'harga' => 'nullable',
         'link_tokped' => 'nullable',
         'link_tiktok' => 'nullable',
         'link_shopee' => 'nullable',
@@ -56,11 +57,13 @@ class IndexController extends Controller
    public function update(Request $request, $dataContent)
    {
     $data = $request->validate([
-        'title' => 'required',
-        'desc' => 'required',
-        'about_title' =>'required',
-        'about_desc' => 'required',
-        'about_image' => 'image|nullable','link_tokped' => 'nullable',
+        'title' => 'nulable',
+        'desc' => 'nulable',
+        'about_title' =>'nulable',
+        'about_desc' => 'nulable',
+        'about_image' => 'image|nullable',
+        'harga' => 'nullable',
+        'link_tokped' => 'nullable',
         'link_tiktok' => 'nullable',
         'link_shopee' => 'nullable',
     ]);

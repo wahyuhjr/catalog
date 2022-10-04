@@ -22,8 +22,7 @@
                                 <th>ID</th>
                                 <th class="d-none d-xl-table-cell">Nama Produk</th>
                                 <th class="d-none d-md-table-cell">Gambar</th>
-                                <th class="d-none d-xl-table-cell">Deskripsi Produk</th>
-                                <th class="d-none d-md-table-cell">Harga</th>
+                                <!-- <th class="d-none d-xl-table-cell">Deskripsi Produk</th> -->
                                 <th class="d-none d-md-table-cell">Action</th>
                             </tr>
                         </thead>
@@ -34,12 +33,12 @@
                                 <td>{{ $loop->iteration}}</td>
                                 <td class="d-none d-xl-table-cell">{{ $product->nama }}</td>
                                 <td class="d-none d-xl-table-cell">{{ asset($product->gambar) }}</td>
-                                <td class="d-none d-xl-table-cell" id="value">
+                                <!-- <td class="d-none d-xl-table-cell" id="value">
                                     <p class="cut-text" id="value">
                                     {{ $product->deskripsi }}
                                     </p>
-                                </td>
-                                <td class="d-none d-md-table-cell">Rp.{{ number_format($product->harga, 2,',','.') }}
+                                </td> -->
+                                <!-- <td class="d-none d-md-table-cell">Rp.{{ number_format($product->harga, 2,',','.') }} -->
                                 </td>
                                
                                 <td class="d-none d-xl-table-cell">
@@ -47,9 +46,9 @@
                                         href="{{url ('/dashboard/'.$product->id_produk.'/edit')}}">
                                         <i class="material-icons" style="font-size:16px">border_color</i>
                                     </a>
-                                    <a type="submit" method="get" href="" class="badge bg-info">
+                                    <!-- <a type="submit" method="get" href="" class="badge bg-info">
                                         <i class="material-icons" style="font-size:16px">visibility</i>
-                                    </a>
+                                    </a> -->
                                     <form action="{{  url ('/dashboard', $product->id_produk)  }}" method="post"
                                         class="d-inline">
                                         @csrf

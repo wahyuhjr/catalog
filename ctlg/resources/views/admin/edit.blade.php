@@ -68,21 +68,6 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <h5 class="card-title mb-0">Harga</h5>
-                                </div>
-                                <div class="card-body">
-                                    <input type="text" name="harga"
-                                        class="form-control @error('harga') is-invalid @enderror" placeholder=""
-                                        value="{{ $product->harga }}">
-                                    @error('harga')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                    @enderror
-                                </div>
-                            </div>
                             <button class="btn btn-primary" type="submit">Save</button>
                         </div>
                     </div>

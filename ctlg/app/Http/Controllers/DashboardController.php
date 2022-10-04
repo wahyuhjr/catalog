@@ -44,7 +44,6 @@ class DashboardController extends Controller
             'nama' => 'required|max:225',
             'gambar' => 'required',
             'deskripsi' => 'required',
-            'harga' => 'required'
         ]);
 
         if (isset($request->gambar)) {
@@ -96,7 +95,7 @@ class DashboardController extends Controller
             'nama' => 'required|max:225',
             'gambar' => 'nullable|image',
             'deskripsi' => 'required',
-            'harga' => 'required'
+            
         ]);
 
         $data = [];
@@ -107,7 +106,7 @@ class DashboardController extends Controller
             $request->gambar->move($tujuan_upload,$request->gambar->getClientOriginalName());
             $data['gambar'] = $tujuan_upload . '/' . $request->gambar->getClientOriginalName();
         }
-        $data['harga'] = $request->harga;
+        // $data['harga'] = $request->harga;
 
         Post::where('id_produk', $dashboard)->update($data);
 

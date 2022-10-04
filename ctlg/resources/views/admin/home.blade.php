@@ -45,9 +45,9 @@
                                         href="{{url ('/datacontent/'.$datacontent->id.'/edit')}}" class="badge bg-success">
                                         <i class="material-icons" style="font-size:16px">border_color</i>
                                     </a>
-                                    <a type="submit" method="get" href="" class="badge bg-info">
+                                    <!-- <a type="submit" method="get" href="" class="badge bg-info">
                                         <i class="material-icons" style="font-size:16px">visibility</i>
-                                    </a>
+                                    </a> -->
                                     <form action="{{  url ('/datacontent', $datacontent->id)  }}" method="post"
                                         class="d-inline">
                                         @csrf

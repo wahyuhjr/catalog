@@ -17,13 +17,13 @@
 
              <li class="sidebar-item">
                  <a class="sidebar-link" href="{{  url('dashboard')  }}">
-                     <i class="align-middle" data-feather="package"></i> <span class="align-middle">Produk</span>
+                     <i class="align-middle" data-feather="list"></i> <span class="align-middle">List Produk</span>
                  </a>
              </li>
 
              <li class="sidebar-item ">
-                 <a class="sidebar-link" href="pages-blank.html">
-                     <i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
+                 <a class="sidebar-link" href="{{ url('') }}">
+                     <i class="align-middle" data-feather="package"></i> <span class="align-middle">Detail Produk</span>
                  </a>
              </li>
          </ul>
