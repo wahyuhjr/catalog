@@ -56,18 +56,7 @@
                                 <div class="card-header">
                                     <h5 class="card-title mb-0">Deskripsi</h5>
                                 </div>
-                                <div class="card-body">
-                                    <!-- <input id="deskripsi" type="hidden" name="deskripsi"> -->
-                                    <textarea class="myTextarea form-control @error('deskripsi') is-invalid @enderror"
-                                        name="deskripsi" id="myTextarea">{{ $product->deskripsi }}
-                                    </textarea>
-                                    @error('deskripsi')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                    @enderror
-                                </div>
-                            </div>
+                                
                             <button class="btn btn-primary" type="submit">Save</button>
                         </div>
                     </div>

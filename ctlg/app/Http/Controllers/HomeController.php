@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Selai;
 use App\Models\DataContent;
 use App\Models\HomeContent;
+use App\Models\DetailProduk;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -15,6 +17,8 @@ class HomeController extends Controller
             'products' => Post::get(),
             // 'contents' => DataContent::get(),
             'contents' => HomeContent::get(),
+            'details' => DetailProduk::get(),
+            'selai' => Selai::get(),
         ]);
     }
 }

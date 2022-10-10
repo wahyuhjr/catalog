@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SelaiController;
 use App\Http\Controllers\CreateController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
@@ -44,6 +45,7 @@ Route::get('edit', function () {
 Route::resource('/dashboard', DashboardController::class)->middleware('auth');
 Route::resource('/datacontent', IndexController::class)->middleware('auth');
 Route::resource('/detailproduk', DetailProdukController::class)->middleware('auth');
+Route::resource('/selai', SelaiController::class)->middleware('auth');
 // Route::delete('/dashboard', [DashboardController::class, 'destroy'])->middleware('auth');
 
 

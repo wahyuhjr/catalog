@@ -40,10 +40,10 @@ class DashboardController extends Controller
      */
     public function store(Request $request)
     {
+        
         $validatedData = $request->validate([
             'nama' => 'required|max:225',
             'gambar' => 'required',
-            'deskripsi' => 'required',
         ]);
 
         if (isset($request->gambar)) {
@@ -94,13 +94,12 @@ class DashboardController extends Controller
         $request->validate([
             'nama' => 'required|max:225',
             'gambar' => 'nullable|image',
-            'deskripsi' => 'required',
             
         ]);
 
         $data = [];
         $data['nama'] = $request->nama;
-        $data['deskripsi'] = $request->deskripsi;
+        // $data['deskripsi'] = $request->deskripsi;
         if (isset($request->gambar)) {
             $tujuan_upload = 'data_file';
             $request->gambar->move($tujuan_upload,$request->gambar->getClientOriginalName());

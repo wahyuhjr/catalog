@@ -1,7 +1,4 @@
  @extends('layouts.app')
-
-
- 
  @section('content')
 
 
@@ -9,8 +6,8 @@
  <section id="home" class="relative pt-36 h-screen bg-sambal" id="home">
      <div class="container mx-auto">
          @foreach ($contents as $datacontent)
-         <div class="title top-1/4" >
-         <h1 class="font-bold text-7xl text-center text-bata mb-0" id="title" data-aos="zoom-in" data-aos-duration="1200">
+         <div class="title lg:top-1/4" >
+         <h1 class="font-bold text-5xl lg:text-7xl text-center text-bata mb-0" id="title" data-aos="zoom-in" data-aos-duration="1200">
             {{   $datacontent->title   }}
         </h1>
         <div class="text-white font-semibold text-2xl  max-w-4xl max-auto mt-5" id="subtitle" data-aos="zoom-in" data-aos-duration="2000">
@@ -24,17 +21,19 @@
  <!-- end wrape-image -->
 
  <!-- Product List -->
- <div class="px-4 mx-auto mt-20 bg-home border border-gray-200 rounded-lg shadow-md card lg:px-0 lg:mt-0" id="product">
+ <div class="px-4 mx-auto  bg-home border border-gray-200 rounded-lg shadow-md card lg:px-0 lg:mt-0" id="product">
      <div class=" px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
          <h2 class="text-2xl font-bold tracking-tight text-bata">Our product list</h2>
+         
          <div class="grid grid-cols-1 mt-6 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
          @foreach($products as $product)
-             <div class="relative group">
-                 <div
-                     class="w-full overflow-hidden bg-gray-200 rounded-md min-h-80 aspect-w-1 aspect-h-1 group-hover:opacity-75 lg:aspect-none lg:h-80" data-aos="fade-up" data-aos-duration="1000">
+             <div class="group relative ">
+                 <a href="#about">
+                 <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80" >
                      <img src="{{ asset($product->gambar) }}" alt="sambel"
                          class="object-cover object-center w-full h-full lg:h-full lg:w-full">
-                 </div>
+                 </div> 
+                 </a>
                  <div class="flex justify-center mt-4 " data-aos="fade-up" data-aos-duration="1000">
                      <div class="text-center">
                          <h3 class="text-sm text-bata font-bold">
@@ -59,80 +58,41 @@
  <section class="about overflow-hidden h-min-screen bg-dof" id="about">
      <h1 class="text-oren text-center text-4xl mt-10 lg:text-7xl lg:mt-20 lg:mb-40 font-bold">Sambal</h1>
        
-        <div class=" mx-auto ">
-            <!-- data-aos="fade-right"
-            data-aos-offset="400"
-            data-aos-easing="ease-in-sine" -->
-            <div class="lg:grid lg:grid-cols-3">
-            <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0">
-            <img src="{{  asset ('assets/images/4.png') }}" class="" width="400" height="400">
-            <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
-                 <h1 class="text-4xl font-bold text-white">judul</h1>
-                 <div class="mt-5 mb-10 text-oren">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat totam, molestias unde aliquid esse sed ratione atque recusandae nostrum possimus nesciunt quae sequi repellendus rem incidunt dolorum doloremque nisi ipsa?</div>
-                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">Rp. 30.0000</h3>
-             </div>
-            </div>
-            <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0">
-            <img src="{{  asset ('assets/images/4.png') }}" class="" width="400" height="400">
-            <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
-                 <h1 class="text-4xl font-bold text-white">judul</h1>
-                 <div class="mt-5 mb-10 text-oren">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat totam, molestias unde aliquid esse sed ratione atque recusandae nostrum possimus nesciunt quae sequi repellendus rem incidunt dolorum doloremque nisi ipsa?</div>
-                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">Rp. 30.0000</h3>
-             </div>
-            </div>
-            <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 lg:mb-10">
-            <img src="{{  asset ('assets/images/4.png') }}" class="" width="400" height="400">
-            <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
-                 <h1 class="text-4xl font-bold text-white">judul</h1>
-                 <div class="mt-5 mb-10 text-oren">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat totam, molestias unde aliquid esse sed ratione atque recusandae nostrum possimus nesciunt quae sequi repellendus rem incidunt dolorum doloremque nisi ipsa?</div>
-                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">Rp. 30.0000</h3>
-             </div>
-            </div>    
-         </div>
+     <div class=" mx-auto ">
+         <!-- data-aos="fade-right"
+         data-aos-offset="400"
+         data-aos-easing="ease-in-sine" -->
 
-         <!-- selai -->
-         <h1 class="lg:text-7xl text-center text-oren font-bold mt-10 mb-10 lg:mb-20 text-4xl ">Selai</h1>
-            <div class="lg:grid lg:grid-cols-3">
-            <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0">
-            <img src="{{  asset ('assets/images/4.png') }}" class="" width="400" height="400">
+         <!-- Sambal -->
+         <div class="lg:grid lg:grid-cols-3">
+             @foreach ($details as $detailproduk)
+            <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 mb-10 ml-10">
+            <img src="{{  asset ($detailproduk->image_detail) }}" class="object-cover object-center " width="400" height="400">
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
-                 <h1 class="text-4xl font-bold text-white">judul</h1>
-                 <div class="mt-5 mb-10 text-oren">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat totam, molestias unde aliquid esse sed ratione atque recusandae nostrum possimus nesciunt quae sequi repellendus rem incidunt dolorum doloremque nisi ipsa?</div>
-                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">Rp. 30.0000</h3>
+                 <h1 class="text-4xl font-bold text-white">{{ $detailproduk->title_detail }}</h1>
+                 <div class="mt-5 mb-10 text-oren">{!! $detailproduk->desc_detail !!}</div>
+                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">{{ $detailproduk->harga }}</h3>
              </div>
-            </div>
-            <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0">
-            <img src="{{  asset ('assets/images/4.png') }}" class="" width="400" height="400">
+            </div>         
+            @endforeach
+        </div>
+
+        <!-- Selai -->
+        <div class="lg:grid lg:grid-cols-3">
+             @foreach ($selai as $produkselai)
+            <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 mb-10 ml-10">
+            <img src="{{  asset ($produkselai->image_selai) }}" class=" object-cover object-center w-full h-full lg:h-full lg:w-full" width="100" height="100">
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
-                 <h1 class="text-4xl font-bold text-white">judul</h1>
-                 <div class="mt-5 mb-10 text-oren">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat totam, molestias unde aliquid esse sed ratione atque recusandae nostrum possimus nesciunt quae sequi repellendus rem incidunt dolorum doloremque nisi ipsa?</div>
-                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">Rp. 30.0000</h3>
+                 <h1 class="text-4xl font-bold text-white">{{ $produkselai->title_selai }}</h1>
+                 <div class="mt-5 mb-10 text-oren">{!! $produkselai->desc_selai !!}</div>
+                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">{{ $produkselai->harga }}</h3>
              </div>
-            </div>
-            <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 lg:mb-10">
-            <img src="{{  asset ('assets/images/4.png') }}" class="" width="400" height="400">
-            <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
-                 <h1 class="text-4xl font-bold text-white">judul</h1>
-                 <div class="mt-5 mb-10 text-oren">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat totam, molestias unde aliquid esse sed ratione atque recusandae nostrum possimus nesciunt quae sequi repellendus rem incidunt dolorum doloremque nisi ipsa?</div>
-                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">Rp. 30.0000</h3>
-             </div>
-            </div>    
-         </div>
-         <h1 class="lg:text-7xl text-center text-oren font-bold mt-10 mb-10 lg:mb-20 text-4xl ">Bumbu</h1>
-            <div class="lg:grid lg:grid-cols-3">
-            <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 mb-20">
-            <img src="{{  asset ('assets/images/4.png') }}" class="" width="400" height="400">
-            <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
-                 <h1 class="text-4xl font-bold text-white">judul</h1>
-                 <div class="mt-5 mb-10 text-oren">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat totam, molestias unde aliquid esse sed ratione atque recusandae nostrum possimus nesciunt quae sequi repellendus rem incidunt dolorum doloremque nisi ipsa?</div>
-                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">Rp. 30.0000</h3>
-             </div>
-            </div>
-            
-         </div>
-     </div>
-       
+            </div> 
+            @endforeach
+        </div>
+    </div>    
  </section>
+ 
  <!-- end about -->
 
  <!-- find us -->

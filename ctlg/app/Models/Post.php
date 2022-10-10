@@ -14,8 +14,8 @@ class Post extends Model
     protected $fillable = [
         'nama',
         'gambar',
-        'deskripsi',
-        'updated_at',
-        'created_at',
+        // 'deskripsi',
     ];
+
+    public $timestamps = false;
 }

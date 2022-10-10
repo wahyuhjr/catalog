@@ -22,8 +22,18 @@
              </li>
 
              <li class="sidebar-item ">
-                 <a class="sidebar-link" href="{{ url('') }}">
-                     <i class="align-middle" data-feather="package"></i> <span class="align-middle">Detail Produk</span>
+                 <a class="sidebar-link" href="{{ url('detailproduk') }}">
+                     <i class="align-middle" data-feather="package"></i> <span class="align-middle">Produk Sambal</span>
+                 </a>
+             </li>
+             <li class="sidebar-item ">
+                 <a class="sidebar-link" href="{{ url('selai') }}">
+                     <i class="align-middle" data-feather="package"></i> <span class="align-middle">Produk Selai</span>
+                 </a>
+             </li>
+             <li class="sidebar-item ">
+                 <a class="sidebar-link" href="{{ url('detailproduk') }}">
+                     <i class="align-middle" data-feather="package"></i> <span class="align-middle">Produk Bumbu</span>
                  </a>
              </li>
          </ul>

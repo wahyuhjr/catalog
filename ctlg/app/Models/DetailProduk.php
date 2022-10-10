@@ -17,4 +17,6 @@ class DetailProduk extends Model
         'harga',
         'image_detail',
     ];
+
+    public $timestamps = false;
 }

@@ -15,10 +15,6 @@ class HomeContent extends Model
     protected $fillable = [
         'title',
         'desc',
-        'about_title',
-        'about_desc',
-        'about_image',
-        'harga',
         'link_tokped',
         'link_tiktok',
         'link_shopee',
