@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\bumbu;
 use App\Models\Selai;
 use App\Models\DataContent;
 use App\Models\HomeContent;
@@ -19,6 +20,7 @@ class HomeController extends Controller
             'contents' => HomeContent::get(),
             'details' => DetailProduk::get(),
             'selai' => Selai::get(),
+            'bumbu' => bumbu::get(),
         ]);
     }
 }

@@ -4,6 +4,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\BumbuController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SelaiController;
@@ -46,6 +47,7 @@ Route::resource('/dashboard', DashboardController::class)->middleware('auth');
 Route::resource('/datacontent', IndexController::class)->middleware('auth');
 Route::resource('/detailproduk', DetailProdukController::class)->middleware('auth');
 Route::resource('/selai', SelaiController::class)->middleware('auth');
+Route::resource('/bumbu', BumbuController::class)->middleware('auth');
 // Route::delete('/dashboard', [DashboardController::class, 'destroy'])->middleware('auth');
 
 

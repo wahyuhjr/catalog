@@ -32,7 +32,7 @@
                  </a>
              </li>
              <li class="sidebar-item ">
-                 <a class="sidebar-link" href="{{ url('detailproduk') }}">
+                 <a class="sidebar-link" href="{{ url('bumbu') }}">
                      <i class="align-middle" data-feather="package"></i> <span class="align-middle">Produk Bumbu</span>
                  </a>
              </li>

@@ -56,7 +56,7 @@
  <!-- End Product List -->
 
  <section class="about overflow-hidden h-min-screen bg-dof" id="about">
-     <h1 class="text-oren text-center text-4xl mt-10 lg:text-7xl lg:mt-20 lg:mb-40 font-bold">Sambal</h1>
+     <h1 class="text-oren text-center text-4xl mt-10 lg:text-7xl lg:mt-20 lg:mb-20 font-bold">Sambal</h1>
        
      <div class=" mx-auto ">
          <!-- data-aos="fade-right"
@@ -78,6 +78,7 @@
         </div>
 
         <!-- Selai -->
+        <h1 class="text-white text-center text-4xl mt-10 lg:text-7xl lg:mt-20 lg:mb-20 font-bold bg-oren w-52 mx-auto h-20 rounded-lg">Selai</h1>
         <div class="lg:grid lg:grid-cols-3">
              @foreach ($selai as $produkselai)
             <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 mb-10 ml-10">
@@ -86,6 +87,21 @@
                  <h1 class="text-4xl font-bold text-white">{{ $produkselai->title_selai }}</h1>
                  <div class="mt-5 mb-10 text-oren">{!! $produkselai->desc_selai !!}</div>
                  <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">{{ $produkselai->harga }}</h3>
+             </div>
+            </div> 
+            @endforeach
+        </div>
+
+        <!-- Bumbu -->
+        <h1 class="text-white text-center text-4xl mt-10 lg:text-7xl lg:mt-20 lg:mb-40 font-bold bg-oren w-72 mx-auto h-20 rounded-lg">Bumbu</h1>
+        <div class="lg:grid lg:grid-cols-3">
+             @foreach ($bumbu as $produkbumbu)
+            <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 mb-10 ml-10">
+            <img src="{{  asset ($produkselai->image_selai) }}" class=" object-cover object-center w-full h-full lg:h-full lg:w-full" width="100" height="100">
+            <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
+                 <h1 class="text-4xl font-bold text-white">{{ $produkbumbu->title_bumbu }}</h1>
+                 <div class="mt-5 mb-10 text-oren">{!! $produkbumbu->desc_bumbu !!}</div>
+                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">{{ $produkbumbu->harga }}</h3>
              </div>
             </div> 
             @endforeach
