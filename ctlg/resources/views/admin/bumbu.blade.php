@@ -37,13 +37,13 @@
                                 <td class="d-none d-xl-table-cell">{{ $produkbumbu->image_bumbu }}</td>               
                                 <td class="d-none d-xl-table-cell">
                                     <a type="submit" method="get"
-                                        href="{{ url ('/bumbu/'.$produkbumbu->id_bumbu.'/edit')}}" class="badge bg-success">
+                                        href="{{ url ('/bumbu/'.$produkbumbu->id.'/edit')}}" class="badge bg-success">
                                         <i class="material-icons" style="font-size:16px">border_color</i>
                                     </a>
                                     <!-- <a type="submit" method="get" href="" class="badge bg-info">
                                         <i class="material-icons" style="font-size:16px">visibility</i>
                                     </a> -->
-                                    <form action="{{  url ('/bumbu', $produkbumbu->id_bumbu)  }}" method="post"
+                                    <form action="{{  url ('/bumbu', $produkbumbu->id)  }}" method="post"
                                         class="d-inline">
                                         @csrf
                                         @method('delete')

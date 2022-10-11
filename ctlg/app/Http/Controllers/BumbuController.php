@@ -61,7 +61,7 @@ class bumbuController extends Controller
         $validatedData['image_bumbu'] = $tujuan_upload . '/' . $request->image_bumbu->getClientOriginalName();
     }
 
-    bumbu::where('id_bumbu', $produkbumbu)->update($validatedData);
+    bumbu::where('id', $produkbumbu)->update($validatedData);
 
     return redirect('/bumbu')->with('success', 'Data has been updated');
    }

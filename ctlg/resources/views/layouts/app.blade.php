@@ -17,8 +17,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <title>Admin Dashboard</title>
+    <title>SN FOOD</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @vite('resources/js/app.js')
     <!-- <link href="{{ asset (' assets/css/app.css ') }}" rel="stylesheet"> -->
