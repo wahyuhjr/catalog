@@ -36,7 +36,7 @@
                  </a>
                  <div class="flex justify-center mt-4 " data-aos="fade-up" data-aos-duration="1000">
                      <div class="text-center">
-                         <h3 class="text-sm text-bata font-bold">
+                         <h3 class="text-lg text-bata font-bold">
                              <a href="#">
                                  {{  $product->nama  }}
                              </a>
@@ -56,7 +56,7 @@
  <!-- End Product List -->
 
  <section class="about overflow-hidden h-min-screen bg-home" >
- <h1 class="title-2 text-white text-center text-4xl mt-10 lg:text-6xl lg:mt-52 lg:mb-20 font-bold bg-bata w-52 mx-auto h-20 rounded-full">Sambal</h1>
+ <h1 class="title-2 text-white text-center text-4xl mt-10 lg:text-6xl lg:mt-52 lg:mb-20 font-bold bg-bata w-36 md:w-52 mx-auto lg:h-20 rounded-full">Sambal</h1>
        
      <div class=" mx-auto ">
          <!-- data-aos="fade-right"
@@ -70,7 +70,7 @@
             <img src="{{  asset ($detailproduk->image_detail) }}" class="object-cover object-center " width="400" height="400">
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
                  <h1 class="title-2 text-4xl font-bold text-bata">{{ $detailproduk->title_detail }}</h1>
-                 <div class="mt-5 mb-10 ">{!! $detailproduk->desc_detail !!}</div>
+                 <div class="mt-5 mb-5 md:mb-10">{!! $detailproduk->desc_detail !!}</div>
                  <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">{{ $detailproduk->harga }}</h3>
              </div>
             </div>         
@@ -78,14 +78,14 @@
         </div>
 
         <!-- Selai -->
-        <h1 class="title-2 text-white text-center text-4xl mt-20 lg:text-6xl lg:mt-52 lg:mb-20 font-bold bg-bata w-52 mx-auto h-20 rounded-full">Selai</h1>
+        <h1 class="title-2 text-white text-center text-4xl lg:text-6xl lg:mt-20 lg:mb-20 font-bold bg-bata w-36 md:w-52 mx-auto h-18 mt-32 lg:h-20 rounded-full">Selai</h1>
         <div class="lg:grid lg:grid-cols-3" id="selai">
              @foreach ($selai as $produkselai)
             <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 mb-10 ml-10">
             <img src="{{  asset ($produkselai->image_selai) }}" class=" object-cover object-center w-full h-full lg:h-full lg:w-full" width="100" height="100">
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
                  <h1 class="title-2 text-4xl font-bold text-bata">{{ $produkselai->title_selai }}</h1>
-                 <div class="mt-5 mb-10 ">{!! $produkselai->desc_selai !!}</div>
+                 <div class="mt-5 mb-5 md:mb-10">{!! $produkselai->desc_selai !!}</div>
                  <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">{{ $produkselai->harga }}</h3>
              </div>
             </div> 
@@ -93,14 +93,14 @@
         </div>
 
         <!-- Bumbu -->
-        <h1 class="title-2 text-white text-center text-4xl mt-10 lg:text-6xl lg:mt-20 lg:mb-20 font-bold bg-bata w-52 mx-auto h-20 rounded-full">Bumbu</h1>
+        <h1 class="title-2 text-white text-center text-4xl lg:text-6xl lg:mt-20 lg:mb-20 font-bold bg-bata w-36 md:w-52 mx-auto h-18 mt-32 lg:h-20 rounded-full">Bumbu</h1>
         <div class="lg:grid lg:grid-cols-3">
              @foreach ($bumbu as $produkbumbu)
             <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 mb-10 ml-10">
             <img src="{{  asset ($produkbumbu->image_bumbu) }}" class=" object-cover object-center w-full h-full lg:h-full lg:w-full" width="100" height="100">
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
                  <h1 class="title-2 text-4xl font-bold text-bata">{{ $produkbumbu->title_bumbu }}</h1>
-                 <div class="mt-5 mb-10 ">{!! $produkbumbu->desc_bumbu !!}</div>
+                 <div class="mt-5 mb-5 md:mb-10">{!! $produkbumbu->desc_bumbu !!}</div>
                  <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">{{ $produkbumbu->harga }}</h3>
              </div>
             </div> 
@@ -112,11 +112,11 @@
  <!-- end about -->
 
  <!-- Purchase us -->
- <section class="find lg:h-96 bg-white mt-20 h-48" id="shop">
+ <section class="find lg:h-96 bg-white mt-10 lg:mt-20 h-48" id="shop">
    
     <div class="container mx-auto ">
          <div class="shop ">
-         <div class="text-4xl md:text-4xl font-bold text-center text-bata ">Purchase on </div>
+         <div class="text-2xl md:text-4xl font-bold text-center text-bata ">Purchase on </div>
          <div class="grid grid-cols-3 lg:mt-28 mt-10">
              <a href=" ">
                  <img src="{{  asset ('assets/images/sosmed/1.png') }}" class="px-5 lg:ml-80 lg:w-1/2">
@@ -133,7 +133,7 @@
  </section>
  <!-- find us -->
 
- <footer class="p-4  bg-dof shadow  md:px-6">
+ <footer class="p-4 lg:h-40 h-96 bg-dof shadow  md:px-6">
     <div class="container mx-auto">
         <div class="sm:flex sm:items-center sm:justify-between">
             <a href="" class="flex items-center mb-4 sm:mb-0">
