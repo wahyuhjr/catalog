@@ -21,15 +21,15 @@
  <!-- end wrape-image -->
 
  <!-- Product List -->
- <div class="px-4 mx-auto  bg-white border border-gray-200 rounded-lg shadow-md card lg:px-0 lg:mt-0" id="product">
+ <div class="px-4 mx-auto  bg-home border border-gray-200 rounded-lg shadow-md card lg:px-0 lg:mt-0" id="product">
      <div class=" px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
          <h2 class="text-2xl font-bold tracking-tight text-bata">Our product list</h2>
          
-         <div class="grid grid-cols-1 mt-6 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+         <div class="grid grid-cols-1 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
          @foreach($products as $product)
              <div class="group relative ">
-                 <a href="#selai">
-                 <div class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80" >
+                 <a href="#${{ $product->id_produk }}">
+                 <div class="min-h-full aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80" >
                      <img src="{{ asset($product->gambar) }}" alt="sambel"
                          class="object-cover object-center w-full h-full lg:h-full lg:w-full">
                  </div> 
@@ -55,37 +55,32 @@
  </div>
  <!-- End Product List -->
 
- <section class="about overflow-hidden h-min-screen bg-home" >
- <h1 class="title-2 text-white text-center text-4xl mt-10 lg:text-6xl lg:mt-52 lg:mb-20 font-bold bg-bata w-36 md:w-52 mx-auto lg:h-20 rounded-full">Sambal</h1>
-       
-     <div class=" mx-auto ">
-         <!-- data-aos="fade-right"
-         data-aos-offset="400"
-         data-aos-easing="ease-in-sine" -->
-
+ <section class="about overflow-hidden h-min-screen bg-dof" >
+ <h1 class="overflow-hidden title-2 text-bata text-center text-4xl mt-10 lg:text-6xl lg:mt-52 px-auto p-3 lg:mb-20 font-bold bg-white w-36 md:w-full mx-auto lg:h-18 " id="$2">Sambal</h1>
+     <div class=" mx-auto " >
          <!-- Sambal -->
-         <div class="lg:grid lg:grid-cols-3" id="sambal">
+         <div class="lg:grid lg:grid-cols-3"  data-aos="fade-up" data-aos-duration="1200">
              @foreach ($details as $detailproduk)
             <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 mb-10 ml-10">
             <img src="{{  asset ($detailproduk->image_detail) }}" class="object-cover object-center " width="400" height="400">
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
                  <h1 class="title-2 text-4xl font-bold text-bata">{{ $detailproduk->title_detail }}</h1>
-                 <div class="mt-5 mb-5 md:mb-10">{!! $detailproduk->desc_detail !!}</div>
-                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">{{ $detailproduk->harga }}</h3>
+                 <div class="mt-5 mb-5 md:mb-10 text-white">{!! $detailproduk->desc_detail !!}</div>
+                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">IDR {{ $detailproduk->harga }}</h3>
              </div>
             </div>         
             @endforeach
         </div>
 
         <!-- Selai -->
-        <h1 class="title-2 text-white text-center text-4xl lg:text-6xl lg:mt-20 lg:mb-20 font-bold bg-bata w-36 md:w-52 mx-auto h-18 mt-32 lg:h-20 rounded-full">Selai</h1>
-        <div class="lg:grid lg:grid-cols-3" id="selai">
+        <h1 class="overflow-hidden selai title-2 text-bata text-center text-4xl lg:text-6xl lg:mt-20 p-3 lg:mb-20 font-bold bg-white w-full lg:px-auto mx-auto h-18 mt-32 lg:h-18 " id="$3">Selai</h1>
+        <div class="lg:grid lg:grid-cols-3"  data-aos="fade-up" data-aos-duration="1200">
              @foreach ($selai as $produkselai)
             <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 mb-10 ml-10">
             <img src="{{  asset ($produkselai->image_selai) }}" class=" object-cover object-center w-full h-full lg:h-full lg:w-full" width="100" height="100">
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
                  <h1 class="title-2 text-4xl font-bold text-bata">{{ $produkselai->title_selai }}</h1>
-                 <div class="mt-5 mb-5 md:mb-10">{!! $produkselai->desc_selai !!}</div>
+                 <div class="mt-5 mb-5 md:mb-10 text-white">{!! $produkselai->desc_selai !!}</div>
                  <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">{{ $produkselai->harga }}</h3>
              </div>
             </div> 
@@ -93,14 +88,14 @@
         </div>
 
         <!-- Bumbu -->
-        <h1 class="title-2 text-white text-center text-4xl lg:text-6xl lg:mt-20 lg:mb-20 font-bold bg-bata w-36 md:w-52 mx-auto h-18 mt-32 lg:h-20 rounded-full">Bumbu</h1>
-        <div class="lg:grid lg:grid-cols-3">
+        <h1 class="overflow-hidden title-2 text-bata text-center text-4xl lg:text-6xl p-3 lg:mt-20 lg:mb-20 font-bold bg-white w-full mx-auto h-18 mt-32 lg:h-18 " id="$4">Bumbu</h1>
+        <div class="lg:grid lg:grid-cols-3" data-aos="fade-up" data-aos-duration="1200" >
              @foreach ($bumbu as $produkbumbu)
             <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 mb-10 ml-10">
-            <img src="{{  asset ($produkbumbu->image_bumbu) }}" class=" object-cover object-center w-full h-full lg:h-full lg:w-full" width="100" height="100">
+            <img src="{{  asset ($produkbumbu->image_bumbu) }}" class=" object-cover object-center w-full h-full lg:h-full lg:w-full" width="100" height="100" >
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
                  <h1 class="title-2 text-4xl font-bold text-bata">{{ $produkbumbu->title_bumbu }}</h1>
-                 <div class="mt-5 mb-5 md:mb-10">{!! $produkbumbu->desc_bumbu !!}</div>
+                 <div class="mt-5 mb-5 md:mb-10 text-white">{!! $produkbumbu->desc_bumbu !!}</div>
                  <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">{{ $produkbumbu->harga }}</h3>
              </div>
             </div> 
@@ -114,7 +109,7 @@
  <!-- Purchase us -->
  <section class="find lg:h-96 bg-white mt-10 lg:mt-20 h-48" id="shop">
    
-    <div class="container mx-auto ">
+    <div class="container mx-auto " data-aos="fade-up" data-aos-duration="1200">
          <div class="shop ">
          <div class="text-2xl md:text-4xl font-bold text-center text-bata ">Purchase on </div>
          <div class="grid grid-cols-3 lg:mt-28 mt-10">

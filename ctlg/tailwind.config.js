@@ -30,6 +30,8 @@ module.exports = {
                 'oren': '#D79800',
                 'dof': '#272729',
                 'bata': '#C32325',
+                'green': '#6DB15D',
+
             },
         },
     },

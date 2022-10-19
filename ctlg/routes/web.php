@@ -28,11 +28,11 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 
 // Auth::routes();
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 
-Route::get('/index', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
 // Route::get('index', function () {
 //     return view('index');
 // });
