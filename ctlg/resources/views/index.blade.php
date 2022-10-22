@@ -56,7 +56,7 @@
  <!-- End Product List -->
 
  <section class="about overflow-hidden h-min-screen bg-dof" >
- <h1 class="overflow-hidden title-2 text-bata text-center text-4xl mt-10 lg:text-6xl lg:mt-52 px-auto p-3 lg:mb-20 font-bold bg-white w-36 md:w-full mx-auto lg:h-18 " id="$2">Sambal</h1>
+ <h1 class="overflow-hidden title-2 text-bata text-center text-4xl mt-10 lg:text-6xl lg:mt-52 px-auto p-3 lg:mb-20 font-bold bg-white w-full mx-auto lg:h-18 " id="$2">Sambal</h1>
      <div class=" mx-auto " >
          <!-- Sambal -->
          <div class="lg:grid lg:grid-cols-3"  data-aos="fade-up" data-aos-duration="1200">
