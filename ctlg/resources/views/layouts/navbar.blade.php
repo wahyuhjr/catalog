@@ -1,7 +1,7 @@
  <link href="{{ asset (' assets/css/home.css ') }}" rel="stylesheet">
 
 
- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+ <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> -->
 <div class="w-full bg-bata dark-mode:text-midnight-200 dark-mode:bg-bata-800 scroll-smooth text-white " id="nav"
      style="position:fixed;">
   <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
@@ -20,8 +20,8 @@
                  href="#home">Home</a>
              <a class="px-4 py-2 mt-2 text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
                  href="#product">Product</a>
-             <a class="px-4 py-2 mt-2 text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
-                 href="#about">About</a>
+                 <!-- <a class="px-4 py-2 mt-2 text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
+                 href="#product">About</a> -->
              <a class="px-4 py-2 mt-2 text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
                  href="#shop">Shop</a>
     </nav>
