@@ -81,7 +81,7 @@
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
                  <h1 class="title-2 text-4xl font-bold text-bata">{{ $produkselai->title_selai }}</h1>
                  <div class="mt-5 mb-5 md:mb-10 text-white">{!! $produkselai->desc_selai !!}</div>
-                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">{{ $produkselai->harga }}</h3>
+                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">IDR {{ $produkselai->harga }}</h3>
              </div>
             </div> 
             @endforeach
@@ -96,7 +96,7 @@
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
                  <h1 class="title-2 text-4xl font-bold text-bata">{{ $produkbumbu->title_bumbu }}</h1>
                  <div class="mt-5 mb-5 md:mb-10 text-white">{!! $produkbumbu->desc_bumbu !!}</div>
-                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">{{ $produkbumbu->harga }}</h3>
+                 <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">IDR {{ $produkbumbu->harga }}</h3>
              </div>
             </div> 
             @endforeach
