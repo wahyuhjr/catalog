@@ -7,10 +7,10 @@
      <div class="container mx-auto">
          @foreach ($contents as $datacontent)
          <div class="title lg:top-1/4" >
-         <h1 class="font-bold text-5xl lg:text-7xl text-center text-bata mb-0" id="title" data-aos="zoom-in" data-aos-duration="1200">
+         <h1 class="font-bold text-5xl lg:text-7xl text-justify text-bata mb-0" id="title" data-aos="zoom-in" data-aos-duration="1200">
             {{   $datacontent->title   }}
         </h1>
-        <div class="text-white font-semibold text-2xl  max-w-4xl max-auto mt-5" id="subtitle" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="text-white font-semibold text-2xl  max-w-4xl max-auto mt-5 text text-justify" id="subtitle" data-aos="zoom-in" data-aos-duration="2000">
         {!! $datacontent->desc !!}
             </div>
         </div>
@@ -65,7 +65,7 @@
             <img src="{{  asset ($detailproduk->image_detail) }}" class="object-cover object-center " width="400" height="400">
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
                  <h1 class="title-2 text-4xl font-bold text-bata">{{ $detailproduk->title_detail }}</h1>
-                 <div class="mt-5 mb-5 md:mb-10 text-white">{!! $detailproduk->desc_detail !!}</div>
+                 <div class="mt-5 mb-5 md:mb-10 text-white text text-justify" id="detail-produk">{!! $detailproduk->desc_detail !!}</div>
                  <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">IDR {{ $detailproduk->harga }}</h3>
              </div>
             </div>         
@@ -80,7 +80,7 @@
             <img src="{{  asset ($produkselai->image_selai) }}" class=" object-cover object-center w-full h-full lg:h-full lg:w-full" width="100" height="100">
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
                  <h1 class="title-2 text-4xl font-bold text-bata">{{ $produkselai->title_selai }}</h1>
-                 <div class="mt-5 mb-5 md:mb-10 text-white">{!! $produkselai->desc_selai !!}</div>
+                 <div class="mt-5 mb-5 md:mb-10 text-white" id="detail-produk">{!! $produkselai->desc_selai !!}</div>
                  <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">IDR {{ $produkselai->harga }}</h3>
              </div>
             </div> 
@@ -95,7 +95,7 @@
             <img src="{{  asset ($produkbumbu->image_bumbu) }}" class=" object-cover object-center w-full h-full lg:h-full lg:w-full" width="100" height="100" >
             <div class="lg:mr-10  lg:mt-0  mt-5" id="about-text">
                  <h1 class="title-2 text-4xl font-bold text-bata">{{ $produkbumbu->title_bumbu }}</h1>
-                 <div class="mt-5 mb-5 md:mb-10 text-white">{!! $produkbumbu->desc_bumbu !!}</div>
+                 <div class="mt-5 mb-5 md:mb-10 text-white" id="detail-produk">{!! $produkbumbu->desc_bumbu !!}</div>
                  <h3 class="text-white bg-bata w-28 text-center rounded-md p-1">IDR {{ $produkbumbu->harga }}</h3>
              </div>
             </div> 
@@ -113,13 +113,13 @@
          <div class="shop ">
          <div class="text-2xl md:text-4xl font-bold text-center text-bata ">Purchase on </div>
          <div class="grid grid-cols-3 lg:mt-28 mt-10">
-             <a href=" ">
+             <a href="{{ $datacontent->link_shopee }}">
                  <img src="{{  asset ('assets/images/sosmed/1.png') }}" class="px-5 lg:ml-80 lg:w-1/2">
              </a>
-             <a href=" ">
+             <a href="{{ $datacontent->link_tiktok }}">
                  <img src="{{  asset ('assets/images/sosmed/2.png') }}" class="px-5 lg:ml-28 lg:w-1/2">
              </a>
-             <a href=" ">
+             <a href="{{ $datacontent->link_tokped }}">
                  <img src="{{  asset ('assets/images/sosmed/4.png') }}" class="px-5 lg:-ml-24 lg:w-1/2">
              </a>
          </div>
@@ -137,16 +137,16 @@
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm text-cream sm:mb-0 dark:text-gray-400">
                 <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6 ">Shopee</a>
+                    <a href="{{ $datacontent->link_shopee }}" class="mr-4 hover:underline md:mr-6 ">Shopee</a>
                 </li>
                 <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6">Tokopedia</a>
+                    <a href="{{ $datacontent->link_tokped }}" class="mr-4 hover:underline md:mr-6">Tokopedia</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#" class="mr-4 hover:underline md:mr-6 ">Instagram</a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="#" class="hover:underline">Tiktok</a>
+                    <a href="{{ $datacontent->link_tiktok }}" class="hover:underline">Tiktok</a>
                 </li>
             </ul>
         </div>

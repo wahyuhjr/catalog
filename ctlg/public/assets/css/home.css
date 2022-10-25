@@ -89,9 +89,13 @@
 }
 
 body {
-    /* font-family: 'Secular One', sans-serif; */
+    font-family: 'Oswald', sans-serif;
 }
 
 #deskripsi {
     /* max-width: 20px; */
+}
+
+#detail-produk {
+    text-align: justify;
 }
