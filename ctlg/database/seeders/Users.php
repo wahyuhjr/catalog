@@ -17,10 +17,10 @@ class Users extends Seeder
      */
     public function run()
     {
-        User::create([
-            'name' => Str::random(10) . 'wahyu',
-            'email' => Str::random(10) . '@gmail.com',
-            'password' => Hash::make('wahyu'),
-        ]);
+        // User::create([
+        //     'name' => Str::random(10) . 'wahyu',
+        //     'email' => Str::random(10) . '@gmail.com',
+        //     'password' => Hash::make('wahyu'),
+        // ]);
     }
 }

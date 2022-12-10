@@ -29,6 +29,7 @@ module.exports = {
                 'dof': '#272729',
                 'bata': '#C32325',
                 'green': '#6DB15D',
+                'abang': '#CB1C8D',
 
             },
         },
