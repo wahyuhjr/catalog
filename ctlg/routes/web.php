@@ -42,6 +42,9 @@ Route::get('create', function () {
 Route::get('edit', function () {
     return view('admin.edit');
 });
+Route::get('about', function () {
+    return view('about');
+});
 
 Route::resource('/dashboard', DashboardController::class)->middleware('auth');
 Route::resource('/datacontent', IndexController::class)->middleware('auth');

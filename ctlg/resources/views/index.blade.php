@@ -11,16 +11,16 @@
                  data-aos-duration="1200">
                  {{ $datacontent->title   }}
              </h1>
-             <div class="text-white font-semibold text-2xl  max-w-4xl max-auto mt-5 text text-justify p-3" id="subtitle"
+             <div class="text-white font-semibold text-3xl  max-w-4xl max-auto mt-5 text text-justify p-3" id="subtitle"
                  data-aos="zoom-in" data-aos-duration="2000">
                  {!! $datacontent->desc !!}
                  <div class="mt-10 md:mt-20">
-                     <a href="#shop" class="text-white bg-bata px-3 text-center rounded-md p-1 mx-auto ">Beli Sekarang
+                     <a href="#shop" class="text-white bg-bata px-3 text-center rounded-md p-1 mx-auto ">BUY NOW
                      </a>
                  </div>
-            </div>
-            </div>
-            @endforeach
+             </div>
+         </div>
+         @endforeach
      </div>
  </section>
 
@@ -29,7 +29,7 @@
  <!-- Product List -->
  <div class="px-4 mx-auto  bg-home border border-gray-200 rounded-lg shadow-md card lg:px-0 lg:mt-0" id="product">
      <div class=" px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-         <h2 class="text-4xl font-bold tracking-tight text-bata text-center">Our product list</h2>
+         <h2 class="text-4xl font-bold tracking-tight text-bata text-center">OUR PRODUCT LIST</h2>
          <div class="grid grid-cols-1 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
              @foreach($products as $product)
              <div class="group relative ">
@@ -57,7 +57,7 @@
 
  <section class="about overflow-hidden h-min-screen bg-dof">
      <h1 class="overflow-hidden title-2 text-bata text-center text-4xl mt-10 lg:text-6xl lg:mt-52 px-auto p-3 lg:mb-20 font-bold bg-white w-full mx-auto lg:h-18 "
-         id="$2">Sambal</h1>
+         id="$2">Seasoning</h1>
      <div class=" mx-auto ">
          <!-- Sambal -->
          <div class="lg:grid lg:grid-cols-3" data-aos="fade-up" data-aos-duration="1200">
@@ -77,7 +77,7 @@
 
          <!-- Selai -->
          <h1 class="overflow-hidden selai title-2 text-bata text-center text-4xl lg:text-6xl lg:mt-20 p-3 lg:mb-20 font-bold bg-white w-full lg:px-auto mx-auto h-18 mt-32 lg:h-18 "
-             id="$3">Selai</h1>
+             id="$3">Jam</h1>
          <div class="lg:grid lg:grid-cols-3" data-aos="fade-up" data-aos-duration="1200">
              @foreach ($selai as $produkselai)
              <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 mb-10 ml-10">
@@ -94,7 +94,7 @@
 
          <!-- Bumbu -->
          <h1 class="overflow-hidden title-2 text-bata text-center text-4xl lg:text-6xl p-3 lg:mt-20 lg:mb-20 font-bold bg-white w-full mx-auto h-18 mt-32 lg:h-18 "
-             id="$4">Bumbu</h1>
+             id="$4">Condiment</h1>
          <div class="lg:grid lg:grid-cols-3" data-aos="fade-up" data-aos-duration="1200">
              @foreach ($bumbu as $produkbumbu)
              <div class="lg:grid lg:grid-cols-2 gap-2 lg:mt-0 mb-10 ml-10">
@@ -118,7 +118,7 @@
 
      <div class="container mx-auto " data-aos="fade-up" data-aos-duration="1200">
          <div class="shop ">
-             <div class="text-2xl md:text-4xl font-bold text-center text-bata ">Purchase on </div>
+             <div class="text-2xl md:text-4xl font-bold text-center text-bata "> CONTACT US</div>
              <div class="grid grid-cols-3 lg:mt-28 mt-10">
                  <a href="{{ $datacontent->link_shopee }}">
                      <img src="{{  asset ('assets/images/sosmed/1.png') }}" class="px-5 lg:ml-80 lg:w-1/2">
@@ -163,4 +163,5 @@
          </span>
      </div>
  </footer>
+
  @endsection

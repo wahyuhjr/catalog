@@ -24,20 +24,18 @@
          </div>
          <nav :class="{'flex': open, 'hidden': !open}"
              class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-center md:flex-row" id="besar">
-             <a class="px-4 py-2 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
+             <a class="px-4 py-2 mt-2 MD:text-2xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
                  href="#home">HOME</a>
-             <a class="px-4 py-2 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
+             <a class="px-4 py-2 mt-2 MD:text-2xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
                  href="#product">PRODUCT</a>
-             <a class="px-4 py-2 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
+             <a class="px-4 py-2 mt-2 MD:text-2xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
                  href="#product">ABOUT US</a>
-             <a class="px-4 py-2 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
+             <a class="px-4 py-2 mt-2 MD:text-2xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
                  href="#shop">SHOP</a>
-             <a class="px-4 py-2 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
+             <a class="px-4 py-2 mt-2 MD:text-2xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
                  href="#shop">CONTACT</a>
          </nav>
 
      </div>
  </div>
  </div>
-
- 
