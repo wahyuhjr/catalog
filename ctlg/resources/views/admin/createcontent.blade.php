@@ -2,9 +2,9 @@
 
 
 <style>
-    .btn {
-        width: 200px;
-    }
+.btn {
+    width: 200px;
+}
 </style>
 <div>
     <div class="flex flex-col items-center min-h-screen p-3 bg-gray-100 sm:justify-start sm:pt-0 ">
@@ -25,7 +25,9 @@
                                     <h5 class="card-title mb-0 ">Identify Title</h5>
                                 </div>
                                 <div class="card-body">
-                                    <input type="text" name="title" class="form-control @error('title') is-invalid @enderror" placeholder=""> @error('title')
+                                    <input type="text" name="title"
+                                        class="form-control @error('title') is-invalid @enderror" placeholder="">
+                                    @error('title')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
@@ -37,7 +39,8 @@
                                     <h5 class="card-title mb-0 ">Identify Description</h5>
                                 </div>
                                 <div class="card-body">
-                                    <textarea class="myTextarea  @error('desc') is-invalid @enderror" name="desc" id="myTextarea">
+                                    <textarea class="myTextarea  @error('desc') is-invalid @enderror" name="desc"
+                                        id="myTextarea">
                                     </textarea> @error('desc')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -51,7 +54,9 @@
                                     <h5 class="card-title mb-0 ">Link Tokpedia</h5>
                                 </div>
                                 <div class="card-body">
-                                    <input type="text" name="link_tokped" class="form-control @error('link_tokped') is-invalid @enderror" placeholder=""> @error('about_title')
+                                    <input type="text" name="link_tokped"
+                                        class="form-control @error('link_tokped') is-invalid @enderror" placeholder="">
+                                    @error('about_title')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
@@ -63,7 +68,9 @@
                                     <h5 class="card-title mb-0 ">Link Tiktok</h5>
                                 </div>
                                 <div class="card-body">
-                                    <input type="text" name="link_tiktok" class="form-control @error('link_tiktok') is-invalid @enderror" placeholder=""> @error('about_title')
+                                    <input type="text" name="link_tiktok"
+                                        class="form-control @error('link_tiktok') is-invalid @enderror" placeholder="">
+                                    @error('about_title')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
@@ -75,7 +82,38 @@
                                     <h5 class="card-title mb-0 ">Link Shopee</h5>
                                 </div>
                                 <div class="card-body">
-                                    <input type="text" name="link_shopee" class="form-control @error('link_shopee') is-invalid @enderror" placeholder=""> @error('about_title')
+                                    <input type="text" name="link_shopee"
+                                        class="form-control @error('link_shopee') is-invalid @enderror" placeholder="">
+                                    @error('about_title')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">Link Instagram</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="link_instagram"
+                                        class="form-control @error('link_instagram') is-invalid @enderror"
+                                        placeholder="">
+                                    @error('about_title')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0 ">Link WA</h5>
+                                </div>
+                                <div class="card-body">
+                                    <input type="text" name="link_wa"
+                                        class="form-control @error('link_wa') is-invalid @enderror" placeholder="">
+                                    @error('about_title')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>

@@ -11,13 +11,14 @@
                  data-aos-duration="1200">
                  {{ $datacontent->title   }}
              </h1>
-             <div class="text-white font-semibold text-3xl  max-w-4xl max-auto mt-5 text text-justify p-3" id="subtitle"
-                 data-aos="zoom-in" data-aos-duration="2000">
+             <div class="text-white font-semibold md:text-3xl text-lg max-w-4xl max-auto mt-5 text-justify  p-3"
+                 id="subtitle" data-aos="zoom-in" data-aos-duration="2000">
                  {!! $datacontent->desc !!}
-                 <div class="mt-10 md:mt-20">
-                     <a href="#shop" class="text-white bg-bata px-3 text-center rounded-md p-1 mx-auto ">BUY NOW
-                     </a>
-                 </div>
+             </div>
+             <div class=" mt-80 md:mt-72 mx-auto" id="buynow">
+                 <a href="#shop"
+                     class="text-white bg-bata px-3 text-center rounded-md p-1 mx-auto md:text-2xl font-bold">BUY NOW
+                 </a>
              </div>
          </div>
          @endforeach
@@ -119,15 +120,24 @@
      <div class="container mx-auto " data-aos="fade-up" data-aos-duration="1200">
          <div class="shop ">
              <div class="text-2xl md:text-4xl font-bold text-center text-bata "> CONTACT US</div>
-             <div class="grid grid-cols-3 lg:mt-28 mt-10">
+             <div class="md:grid grid-cols-5 lg:mt-28 mt-10">
                  <a href="{{ $datacontent->link_shopee }}">
-                     <img src="{{  asset ('assets/images/sosmed/1.png') }}" class="px-5 lg:ml-80 lg:w-1/2">
+                     <img src="{{  asset ('assets/images/sosmed/1.png') }}"
+                         class="flex justify-end px-2 lg:ml-52 lg:w-1/2">
                  </a>
                  <a href="{{ $datacontent->link_tiktok }}">
-                     <img src="{{  asset ('assets/images/sosmed/2.png') }}" class="px-5 lg:ml-28 lg:w-1/2">
+                     <img src="{{  asset ('assets/images/sosmed/2.png') }}" class="px-2 lg:ml-24 lg:w-1/2">
                  </a>
                  <a href="{{ $datacontent->link_tokped }}">
-                     <img src="{{  asset ('assets/images/sosmed/4.png') }}" class="px-5 lg:-ml-24 lg:w-1/2">
+                     <img src="{{  asset ('assets/images/sosmed/4.png') }}" class="px-2 lg:-ml-46 lg:w-1/2">
+                 </a>
+                 <a href="{{ $datacontent->link_instagram }}">
+                     <img src="{{  asset ('assets/images/sosmed/ig.jpg') }}"
+                         class=" justify-center px-2 lg:-ml-20 lg:w-1/4">
+                 </a>
+                 <a href="{{ $datacontent->link_wa }}">
+                     <img src="{{  asset ('assets/images/sosmed/wa.png') }}"
+                         class="flex justify-center px-2 lg:-ml-40 lg:w-1/4">
                  </a>
              </div>
          </div>

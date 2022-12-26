@@ -8,24 +8,22 @@
                 <div class="card ">
                     <div class="card-header">
                         <h5 class="card-title mb-3">Welcome, {{ auth()->user()->name }}</h5>
-                        <a href="{{  url ('datacontent/create')  }}" class="btn btn-primary mb-0"> <i class="align-middle" data-feather="plus"></i> Tambah Data</a>
+                        <a href="{{  url ('datacontent/create')  }}" class="btn btn-primary mb-0"> <i
+                                class="align-middle" data-feather="plus"></i> Tambah Data</a>
                         @if(session()->has('success'))
                         <div class="badge bg-success" role="alert">
                             {{ session('success') }}
                         </div>
                         @endif
                     </div>
-                   
+
                     <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th>ID</th>
                                 <th class="d-none d-xl-table-cell">Title</th>
                                 <th class="d-none d-xl-table-cell"> Description</th>
-                                <th class="d-none d-xl-table-cell">About Title</th>
-                                <th class="d-none d-xl-table-cell">About Desc</th>
-                                <th class="d-none d-xl-table-cell">About Image</th>
-                                <th class="d-none d-xl-table-cell">Action</th>
+                                <th class="d-none d-xl-table-cell">Link Tokped</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,16 +31,17 @@
                             <tr>
                                 <td>{{ $loop->iteration}}</td>
                                 <td class="d-none d-xl-table-cell">{{ $datacontent->title }}</td>
-                                <td class="d-none d-xl-table-cell"><p class="cut-text">{{ $datacontent->desc }}</p></td>
-                                <td class="d-none d-xl-table-cell">{{ $datacontent->about_title }}</td>
-                                <td class="d-none d-xl-table-cell"><p class="cut-text">{{ $datacontent->about_desc }}</p></td>
-                                <td class="d-none d-xl-table-cell">{{ $datacontent->about_image }}</td>
+                                <td class="d-none d-xl-table-cell">
+                                    <p class="cut-text">{{ $datacontent->desc }}</p>
+                                </td>
+                                <td class="d-none d-xl-table-cell">{{ $datacontent->link_tokped }}</td>
                                 <!-- <td class="d-none d-xl-table-cell">
                                     <p class="cut-text">{{ $datacontent->value }}</p>
                                 </td> -->
                                 <td class="d-none d-xl-table-cell">
                                     <a type="submit" method="get"
-                                        href="{{url ('/datacontent/'.$datacontent->id.'/edit')}}" class="badge bg-success">
+                                        href="{{url ('/datacontent/'.$datacontent->id.'/edit')}}"
+                                        class="badge bg-success">
                                         <i class="material-icons" style="font-size:16px">border_color</i>
                                     </a>
                                     <!-- <a type="submit" method="get" href="" class="badge bg-info">

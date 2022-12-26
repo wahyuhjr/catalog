@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\DataContent;
+
 use App\Models\HomeContent;
 use Illuminate\Http\Request;
 
@@ -10,14 +10,9 @@ class IndexController extends Controller
 {
     public function index()
     {
-        return view('about', [
+        return view('admin.home', [
             'contents' => HomeContent::get(),
         ]);
-    }
-
-    public function about($datacontent)
-    {
-        return view('about', ['datacontent' => $datacontent]);
     }
 
     public function create()
@@ -32,13 +27,12 @@ class IndexController extends Controller
         $validatedData = $request->validate([
             'title' => 'nullable',
             'desc' => 'nullable',
-            'about_title' => 'nullable',
-            'about_desc' => 'nullable',
-            'about_image' => 'image|nullable',
             'harga' => 'nullable',
             'link_tokped' => 'nullable',
             'link_tiktok' => 'nullable',
             'link_shopee' => 'nullable',
+            'link_instagram' => 'nullable',
+            'link_wa' => 'nullable',
         ]);
 
 
@@ -63,15 +57,14 @@ class IndexController extends Controller
     public function update(Request $request, $dataContent)
     {
         $data = $request->validate([
-            'title' => 'nulable',
-            'desc' => 'nulable',
-            'about_title' => 'nulable',
-            'about_desc' => 'nulable',
-            'about_image' => 'image|nullable',
+            'title' => 'nullable',
+            'desc' => 'nullable',
             'harga' => 'nullable',
             'link_tokped' => 'nullable',
             'link_tiktok' => 'nullable',
             'link_shopee' => 'nullable',
+            'link_instagram' => 'nullable',
+            'link_wa' => 'nullable',
         ]);
 
 

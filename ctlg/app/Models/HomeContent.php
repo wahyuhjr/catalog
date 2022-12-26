@@ -18,7 +18,9 @@ class HomeContent extends Model
         'link_tokped',
         'link_tiktok',
         'link_shopee',
-     ];
+        'link_instagram',
+        'link_wa',
+    ];
 
-     public $timestamps = false;
+    public $timestamps = false;
 }
