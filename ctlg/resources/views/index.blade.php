@@ -120,24 +120,21 @@
      <div class="container mx-auto " data-aos="fade-up" data-aos-duration="1200">
          <div class="shop ">
              <div class="text-2xl md:text-4xl font-bold text-center text-bata "> CONTACT US</div>
-             <div class="md:grid grid-cols-5 lg:mt-28 mt-10">
+             <div class="grid grid-cols-5 lg:mt-28 mt-10">
                  <a href="{{ $datacontent->link_shopee }}">
-                     <img src="{{  asset ('assets/images/sosmed/1.png') }}"
-                         class="flex justify-end px-2 lg:ml-52 lg:w-1/2">
+                     <img src="{{  asset ('assets/images/sosmed/1.png') }}" class=" px-2 lg:ml-52 lg:w-1/4 w-24">
                  </a>
                  <a href="{{ $datacontent->link_tiktok }}">
-                     <img src="{{  asset ('assets/images/sosmed/2.png') }}" class="px-2 lg:ml-24 lg:w-1/2">
+                     <img src="{{  asset ('assets/images/sosmed/2.png') }}" class="px-2 lg:ml-24 lg:w-1/4 w-24">
                  </a>
                  <a href="{{ $datacontent->link_tokped }}">
-                     <img src="{{  asset ('assets/images/sosmed/4.png') }}" class="px-2 lg:-ml-46 lg:w-1/2">
+                     <img src="{{  asset ('assets/images/sosmed/4.png') }}" class="px-2 lg:-ml-46 lg:w-1/4 w-24">
                  </a>
                  <a href="{{ $datacontent->link_instagram }}">
-                     <img src="{{  asset ('assets/images/sosmed/ig.jpg') }}"
-                         class=" justify-center px-2 lg:-ml-20 lg:w-1/4">
+                     <img src="{{  asset ('assets/images/sosmed/ig.jpg') }}" class="  px-2 lg:-ml-20 lg:w-1/4 w-10">
                  </a>
                  <a href="{{ $datacontent->link_wa }}">
-                     <img src="{{  asset ('assets/images/sosmed/wa.png') }}"
-                         class="flex justify-center px-2 lg:-ml-40 lg:w-1/4">
+                     <img src="{{  asset ('assets/images/sosmed/wa.png') }}" class=" px-2 lg:-ml-40 lg:w-1/4 w-10">
                  </a>
              </div>
          </div>
@@ -158,6 +155,12 @@
                  </li>
                  <li>
                      <a href="{{ $datacontent->link_tokped }}" class="mr-4 hover:underline md:mr-6">Tokopedia</a>
+                 </li>
+                 <li>
+                     <a href="{{ $datacontent->link_instagram }}" class="mr-4 hover:underline md:mr-6">Intagram</a>
+                 </li>
+                 <li>
+                     <a href="{{ $datacontent->link_wa }}" class="mr-4 hover:underline md:mr-6">Whatsapp</a>
                  </li>
                  <!-- <li>
                     <a href="#" class="mr-4 hover:underline md:mr-6 ">Instagram</a>
