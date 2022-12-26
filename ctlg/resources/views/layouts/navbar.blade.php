@@ -1,6 +1,5 @@
  <link href="{{ asset (' assets/css/home.css ') }}" rel="stylesheet">
 
-
  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
  <div class="w-full bg-bata dark-mode:text-midnight-200 dark-mode:bg-bata-800 scroll-smooth text-white " id="nav"
      style="position:fixed;">
@@ -29,13 +28,12 @@
              <a class="px-4 py-2 mt-2 MD:text-2xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
                  href="#product">PRODUCT</a>
              <a class="px-4 py-2 mt-2 MD:text-2xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
-                 href="{{ url('about') }}">ABOUT US</a>
+                 href="{{ url ('about') }}">ABOUT US</a>
              <a class="px-4 py-2 mt-2 MD:text-2xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
                  href="#shop">SHOP</a>
              <a class="px-4 py-2 mt-2 MD:text-2xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bata-600 dark-mode:focus:bg-bata-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-midnight-200 focus:shadow-outline hover:bg-white hover:text-bata focus:bg-bata-200 focus:text-white focus:outline-none md:mt-0 md:ml-4"
                  href="#shop">CONTACT</a>
          </nav>
-
      </div>
  </div>
  </div>

@@ -11,15 +11,15 @@
         </div>
         <div class="kanan md:p-5 p-5 ">
             <div class="text-1 mt-10 md:mt-20 ">
-                <h1 class="font-bold text-bata text-2xl">Memulai dari nol</h1>
-                <p class="text-white text-lg  md:text-justify lg:w-3/4 ">
+                <h1 class="font-bold text-bata text-xl md:text-2xl">Memulai dari nol</h1>
+                <p class="text-white md:text-lg text-sm  md:text-justify lg:w-3/4 ">
                     Perjalanan awal kami dimulai di sebuah toko retail kecil di Surabaya pada tahun 1970, saat kami
                     mulai
                     menyediakan produk makanan dan minuman lokal maupun impor. </p>
             </div>
             <div class="text-2 mt-5">
-                <h1 class="font-bold text-bata text-2xl"> Menjadi Yang Terdepan</h1>
-                <p class="text-white text-lg lg:text-justify lg:w-3/4 ">
+                <h1 class="font-bold text-bata text-xl md:text-2xl"> Menjadi Yang Terdepan</h1>
+                <p class="text-white md:text-lg text-sm lg:text-justify lg:w-3/4 ">
 
                     Semakin berkembang, kami mulai mengembangkan bisnis ini hingga ke skala nasional. Kami sadar bahwa
                     selama ini, bisnis kami didasari dengan visi untuk menjadi importir dan distributor nomor 1 untuk
@@ -27,8 +27,8 @@
                     mencapai visi tersebut. </p>
             </div>
             <div class="text-3 mt-5">
-                <h1 class="font-bold text-bata text-2xl">Misi Untuk Visi</h1>
-                <p class="text-white text-lg lg:text-justify lg:w-3/4">
+                <h1 class="font-bold text-bata text-xl md:text-2xl">Misi Untuk Visi</h1>
+                <p class="text-white md:text-lg text-sm lg:text-justify lg:w-3/4">
                     Dengan ambisi yang besar, diperlukan juga misi yang matang untuk mencapai titik tersebut. Pertama,
                     kami mendedikasikan bisnis ini untuk menyediakan hanya kualitas produk yang terbaik dengan standar
                     internasional. Kami percaya bahwa pembeli berhak mendapatkan yang terbaik, dan itulah yang akan kami
@@ -43,8 +43,8 @@
                 </p>
             </div>
             <div class="text-4 mt-5">
-                <h1 class="font-bold text-bata text-2xl"> Harapan untuk ke Depan</h1>
-                <p class="text-white text-lg lg:text-justify lg:w-3/4 ">
+                <h1 class="font-bold text-bata text-xl md:text-2xl"> Harapan untuk ke Depan</h1>
+                <p class="text-white md:text-lg text-sm lg:text-justify lg:w-3/4 ">
                     Kedepannya, kami berharap bahwa kualitas produk kami dapat menemani perjalanan hidup Anda
                     sehari-hari, sebagaimana Anda
                 </p>
